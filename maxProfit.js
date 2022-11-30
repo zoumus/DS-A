@@ -28,7 +28,7 @@ var maxProfit = function(prices) {
         let price = prices[i];
         if(price < min || min === null) min = price;
         let difff = price - min
-        if(difff > diff) diff = difff
+        if(difff > diff) diff 
             
     }
     
