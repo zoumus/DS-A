@@ -68,3 +68,21 @@
 // test_05:
 // longestStreak(null); // 0
 
+const longestStreak = (head) => {
+    let current = head;
+    let currStreak = 0;
+    let longStreak = 0;
+    let prevVal = null;
+    while(current !== null) {
+      if (current.val === prevVal) {
+        currStreak += 1;
+      } else {
+        currStreak = 1;
+      }
+      if (currStreak > longStreak) longStreak = currStreak;
+      prevVal = current.val;
+      current = current.next;
+      
+    }
+    return longStreak;
+  };
