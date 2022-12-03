@@ -110,3 +110,30 @@
 
 // addLists(a1, b1);
 // // 5 -> 0 -> 0 -> 1
+
+class Node {
+    constructor(val) {
+      this.val = val;
+      this.next = null;
+    }
+  }
+  
+  const addLists = (head1, head2) => {
+    let head = new Node(null);
+    let current = head;
+    let current1 = head1;
+    let current2 = head2;
+    let carry = 0;
+    while (current1 !== null || current2 !== null || carry !== 0) {
+      const value1 = current1 === null ? 0 : current1.val;
+      const value2 = current2 === null ? 0 : current2.val;
+      const sum = value1 + value2 + carry;
+      carry = sum > 9 ? 1 : 0;
+      let digit = sum % 10;
+      current.next = new Node(digit)
+      current = current.next;
+      if (current1 !== null) current1 = current1.next;
+      if (current2 !== null) current2 = current2.next;
+    }
+    return head.next;
+  };
