@@ -50,3 +50,16 @@
 // treeSum(a); // -> 10
 // test_02:
 // treeSum(null); // -> 0
+
+const treeSum = (root) => {
+    let sum = 0;
+    let stack = [ root ];
+    while(stack.length > 0 && root !== null) {
+      let current = stack.pop();
+      sum += current.val;
+      
+      if(current.left) stack.push(current.left);
+      if(current.right) stack.push(current.right);
+    }
+    return sum;
+  };
