@@ -22,3 +22,25 @@
 
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
+
+var isValid = function(s) {
+    let stack = [];
+    let hash = {
+        '}' : '{',
+        ']' : '[',
+        ')' : '('
+    }
+    
+    for (let i = 0; i < s.length; i++) {
+        var input = s[i]; 
+        if (input in hash) {
+            if (stack.pop() !== hash[input] ) {
+                return false;
+            }
+        } else {
+            stack.push(input);
+        }
+    };
+    
+    return stack.length === 0
+};
