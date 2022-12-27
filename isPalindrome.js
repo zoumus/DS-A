@@ -25,3 +25,10 @@
 
 // 1 <= s.length <= 2 * 105
 // s consists only of printable ASCII characters.
+
+var isPalindrome = function(s) {
+    if (!s) return true;
+    s = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    let revS = s.split('').reverse().join('');
+    return s === revS;
+};
