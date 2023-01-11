@@ -13,3 +13,34 @@
 // Example 2:
 
 // Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
+Output: false
+
+
+// iterate through the matrix
+// find subarray that matches conditionals
+// binary search that subarray
+
+
+
+
+
+function searchTarget(matrix, target) {
+	
+	for (let i = 0; i < matrix.length; i ++) {
+		let sub = matrix[i];
+        if(target > sub[sub.length - 1]) continue;
+		let left = sub[0];
+		let right = sub[sub.length - 1];
+		
+		while(left <= right) {
+			let mid = Math.floor((left+right)/2);
+			if(target === sub[mid]) return true;
+			if(target > sub[mid]) {
+				left = mid - 1;
+			} else {
+				right = mid + 1;
+			}
+		}
+}
+return false;
+}
