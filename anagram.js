@@ -14,3 +14,11 @@
 
 // 1 <= s.length, t.length <= 5 * 104
 // s and t consist of lowercase English letters.
+
+var isAnagram = function(s, t) {
+
+    s = s.split('').sort().join('');
+    t = t.split('').sort().join('');
+    return s === t;
+
+};
