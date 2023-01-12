@@ -21,4 +21,16 @@ var isAnagram = function(s, t) {
     t = t.split('').sort().join('');
     return s === t;
 
+    if (s.length !== t.length) return false
+//     const obj = {}
+//     for ( let i = 0; i < s.length; i++) {
+//         const ss = s[i]
+//         obj[ss] = obj[ss] ? obj[ss] + 1 : 1
+
+//         const tt = t[i]
+//         obj[tt] = obj[tt] ? obj[tt] - 1 : -1
+//     }
+
+//     return Math.max(...Object.values(obj)) === 0
+
 };
