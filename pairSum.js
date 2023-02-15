@@ -6,7 +6,7 @@ function pairSum(numbers, targetSum) {
       if(nums[y] !== undefined) {
         return [nums[y], i];
       } else {
-        nums[num] = j;
+        nums[num] = i;
       } 
     }
 }
