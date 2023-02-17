@@ -6,10 +6,10 @@
 // Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
 // Hence return [3, 14.5, 11].
 
-create an empty array levels
-create a helper function countAvg
-[[3], [9, 20], [15, 7]]
-  0       1           2
+// create an empty array levels
+// create a helper function countAvg
+// [[3], [9, 20], [15, 7]]
+//   0       1           2
 
 function averageLevels(root, levels = [], levelN = 0) {
 	if(root === null) return;
