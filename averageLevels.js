@@ -15,18 +15,18 @@ function averageLevels(root, levels = [], levelN = 0) {
 	if(root === null) return;
 	if(levels.length === levelN) {
 		levels[levelN] =[ root.val];
-} else {
+    } else {
 		levels[levelN].push( root.val);
-}
-averageLevels(root.left, levels, levelN+1)
-averageLevels(root.right,  levels, levelN+1)
+    }
+    averageLevels(root.left, levels, levelN+1)
+    averageLevels(root.right,  levels, levelN+1)
 
-let results = [];
-for(let i = 0; i < levels.length; i++){
-		results.push(avg(levels[i]);}
+    let results = [];
+    for(let i = 0; i < levels.length; i++){
+		results.push(avg(levels[i]));
+    }
 
-return results
-}
+    return results
 }
 
 function avg(arr) {
