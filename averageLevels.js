@@ -11,29 +11,27 @@
 // [[3], [9, 20], [15, 7]]
 //   0       1           2
 
-function averageLevels(root, levels = [], levelN = 0) {
-	if(root === null) return;
-	if(levels.length === levelN) {
-		levels[levelN] =[ root.val];
+var averageOfLevels = function(root, level = [], levelNum = 0) {
+    let result = [];
+    if (root === null) return 0;
+    if (level.length === levelNum) {
+        level[levelNum] = [root.val]
     } else {
-		levels[levelN].push( root.val);
+        level[levelNum].push(root.val)
     }
-    averageLevels(root.left, levels, levelN+1)
-    averageLevels(root.right,  levels, levelN+1)
-
-    let results = [];
-    for(let i = 0; i < levels.length; i++){
-		results.push(avg(levels[i]));
+    averageOfLevels(root.left, level, levelNum + 1);
+    averageOfLevels(root.right, level, levelNum + 1);
+    for(let i = 0; i < level.length; i++) { //[[3], [9,20], [15,7]]
+       result.push(avg(level[i]));
     }
+    return result;
+};
 
-    return results
+function avg(arr) {//[3]
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    let res = sum/arr.length;
+    return res;
 }
-
-function avg(arr) {
-let sum = 0;
-for(let i = 0; i < arr.length; i++) {
-	sum += arr[i];
-}
-return sum/arr.length;
-}
-
