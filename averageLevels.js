@@ -35,3 +35,33 @@ function avg(arr) {//[3]
     let res = sum/arr.length;
     return res;
 }
+
+
+//second one
+var averageOfLevels = function(root) {
+    let queue = [root]
+    let lvl = 1
+    const avgs = []
+    while(queue.length) {
+        const newQueue = []
+        let sum = 0
+        let total = queue.length
+        for(let i = 0; i < queue.length; i++) {
+            const node = queue[i]
+            sum += node.val;
+            if(node.left) {
+                newQueue.push(node.left)
+            }
+
+            if(node.right) {
+                newQueue.push(node.right)
+            }
+        }
+
+        avgs[lvl - 1] = sum / total
+        lvl++
+        queue = newQueue
+    }
+
+    return avgs;
+};
