@@ -60,4 +60,5 @@ var pivotIndex = function(nums) {
     }
     return -1;
 };
+alors qioi de neuf pour ne rien dire et faire pour ce qui doivent faire quelque chose de bien ey de mal si tu veux quelquie chose je dois faire quelque chose de 
  
