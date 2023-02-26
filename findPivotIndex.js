@@ -44,7 +44,7 @@ var pivotIndex = function(nums) {
     let sum = 0;
     for(let i = 0; i < nums.length; i ++) {
         sum += nums[i];
-    } 
+    } //nums = [1,7,3,6,5,6]
 
     let leftSum = 0;
     let rightSum = sum;
