@@ -18,3 +18,21 @@
 // n == height.length
 // 2 <= n <= 105
 // 0 <= height[i] <= 104
+
+var maxArea = function(height) {
+    let left = 0;
+    let right = height.length - 1;
+    let length = height.length - 1;
+    let max = null;
+    for(let i = 0; i < height.length; i ++){
+        let volume = (length * Math.min(height[left], height[right]));
+        if(max === null || volume > max) max = volume
+        if(height[left] <= height[right]) {
+            left ++;
+        } else {
+            right --;
+        }
+        length --;
+    }
+    return max;
+};
