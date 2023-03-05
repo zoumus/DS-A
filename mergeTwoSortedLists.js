@@ -16,7 +16,6 @@
 // Input: list1 = [], list2 = [0]
 // Output: [0]
  
-
 // Constraints:
 
 // The number of nodes in both lists is in the range [0, 50].
@@ -35,5 +34,4 @@ var mergeTwoLists = function(list1, list2) {
         list2.next = mergeTwoLists(list1, list2.next);
         return list2;
     }
-
 };
