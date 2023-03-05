@@ -1,19 +1,18 @@
 function pairSum(numbers, targetSum) {
-    const nums = {};
-    for(let i = 0; i < numbers.length; i ++) {
-      let num = numbers[i];
-      let y = targetSum - num;
-      if(nums[y] !== undefined) {
-        return [nums[y], i];
-      } else {
-        nums[num] = i;
-      } 
-    }
+  const nums = {};
+  for(let i = 0; i < numbers.length; i ++) {
+    let num = numbers[i];
+    let y = targetSum - num;
+    if(nums[y] !== undefined) {
+      return [nums[y], i];
+    } else {
+      nums[num] = i;
+    } 
+  }
 }
-//   Write a function, pairSum, that takes in an array and a target sum as arguments. The function should return an array containing a pair of indices whose elements sum to the given target. The indices returned must be unique.
 
+// Write a function, pairSum, that takes in an array and a target sum as arguments. The function should return an array containing a pair of indices whose elements sum to the given target. The indices returned must be unique.
 // Be sure to return the indices, not the elements themselves.
-
 // There is guaranteed to be one such pair that sums to the target.
 
 // test_00:
