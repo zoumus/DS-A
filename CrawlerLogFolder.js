@@ -29,3 +29,23 @@
 // logs[i] contains lowercase English letters, digits, '.', and '/'.
 // logs[i] follows the format described in the statement.
 // Folder names consist of lowercase English letters and digits.
+
+var minOperations = function(logs) {
+    let steps = 0;
+    for (let i = 0; i < logs.length; i ++) {
+        let step = logs[i];
+        if(step === '../') {
+            if (steps === 0){
+                steps = 0;
+            } else {
+                 steps -= 1;
+            }
+        } else if (step === './') {
+            steps = steps
+        } else {
+            steps += 1;
+        }
+    }
+    
+    return steps;
+};
