@@ -103,10 +103,10 @@ const depthFirstValues = (root) => {
     }
     return result
   };
- //Recursive solution 
-//  const depthFirstValues = (root) => {
-//     if (root === null) return [];
-//     const leftVal = depthFirstValues(root.left);
-//     const rightVal = depthFirstValues(root.right );
-//     return [root.val, ...leftVal, ...rightVal]
-//   }
+ Recursive solution 
+ const depthFirstValues = (root) => {
+    if (root === null) return [];
+    const leftVal = depthFirstValues(root.left);
+    const rightVal = depthFirstValues(root.right );
+    return [root.val, ...leftVal, ...rightVal]
+  }
