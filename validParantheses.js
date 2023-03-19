@@ -22,18 +22,16 @@
 // second counter closed parentheses = 1;
 
 function validParanntheses(str) {
-    let open = '(';
-    let closed = ')';
     let openCount = 0;
     let output = 0; 
-    for(let i = 0; i < str.length; i ++) {
+    for(let i = 0; i < str.length; i ++) { 
         let char = str[i];
-        if(char === open){
-    openCount ++;}
-    if(char === closed) {
-        if(output < openCount) output = openCount;
-        openCount --;
-    }}
+        if(char === '('){
+            openCount ++;}
+        if(char === ')') { 
+            if(output < openCount) output = openCount; 
+            openCount --; 
+        }}
     return output
 }
 
