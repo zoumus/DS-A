@@ -87,15 +87,15 @@
 // breadthFirstValues(null); 
 // //    -> []
 
-// const breadthFirstValues = (root) => {
-//     const result = [];
-//     const queue = [ root ];
-//     while(queue.length > 0 && root !== null) {
-//       const current = queue.pop();
-//       result.push(current.val);
+const breadthFirstValues = (root) => {
+    const result = [];
+    const queue = [ root ];
+    while(queue.length > 0 && root !== null) {
+      const current = queue.pop();
+      result.push(current.val);
       
-//       if(current.left) queue.unshift(current.left);
-//       if(current.right) queue.unshift(current.right);
-//     }
-//     return result
-//   }; 
+      if(current.left) queue.unshift(current.left);
+      if(current.right) queue.unshift(current.right);
+    }
+    return result
+  }; 
