@@ -66,43 +66,43 @@
 // c.right = d;
 // d.right = e;
 
-//      a
-//       \
-//        b
-//       /
-//      c
-//       \
-//        d
-//         \
-//          e
+// //      a
+// //       \
+// //        b
+// //       /
+// //      c
+// //       \
+// //        d
+// //         \
+// //          e
 
-depthFirstValues(a); 
-//    -> ['a', 'b', 'c', 'd', 'e']
-test_04:
-depthFirstValues(null); 
-//    -> []
+// depthFirstValues(a); 
+// //    -> ['a', 'b', 'c', 'd', 'e']
+// test_04:
+// depthFirstValues(null); 
+// //    -> []
 
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
+// class Node {
+//   constructor(val) {
+//     this.val = val;
+//     this.left = null;
+//     this.right = null;
+//   }
+// }
 
-const depthFirstValues = (root) => {
-    // if(root === null) return [];
-    const result = [];
-    const stack = [ root ];
-    while(stack.length > 0 && root !== null) {
-      const current = stack.pop();
-      result.push(current.val);
+// const depthFirstValues = (root) => {
+//     // if(root === null) return [];
+//     const result = [];
+//     const stack = [ root ];
+//     while(stack.length > 0 && root !== null) {
+//       const current = stack.pop();
+//       result.push(current.val);
       
-      if(current.right) stack.push(current.right);
-      if(current.left) stack.push(current.left);
-    }
-    return result
-  };
+//       if(current.right) stack.push(current.right);
+//       if(current.left) stack.push(current.left);
+//     }
+//     return result
+//   };
 //  Recursive solution 
 //  const depthFirstValues = (root) => {
 //     if (root === null) return [];
