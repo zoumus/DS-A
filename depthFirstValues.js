@@ -66,29 +66,29 @@
 // c.right = d;
 // d.right = e;
 
-// //      a
-// //       \
-// //        b
-// //       /
-// //      c
-// //       \
-// //        d
-// //         \
-// //          e
+//      a
+//       \
+//        b
+//       /
+//      c
+//       \
+//        d
+//         \
+//          e
 
-// depthFirstValues(a); 
-// //    -> ['a', 'b', 'c', 'd', 'e']
-// test_04:
-// depthFirstValues(null); 
-// //    -> []
+depthFirstValues(a); 
+//    -> ['a', 'b', 'c', 'd', 'e']
+test_04:
+depthFirstValues(null); 
+//    -> []
 
-// class Node {
-//   constructor(val) {
-//     this.val = val;
-//     this.left = null;
-//     this.right = null;
-//   }
-// }
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}
 
 const depthFirstValues = (root) => {
     // if(root === null) return [];
