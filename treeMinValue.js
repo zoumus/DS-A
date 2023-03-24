@@ -53,29 +53,29 @@
 // const g = new Node(-2);
 // const h = new Node(-2);
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-e.left = g;
-f.right = h;
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// f.right = h;
 
-//        -1
-//      /   \
-//    -6    -5
-//   /  \     \
-// -3   -4   -13
-//     /       \
-//    -2       -2
+// //        -1
+// //      /   \
+// //    -6    -5
+// //   /  \     \
+// // -3   -4   -13
+// //     /       \
+// //    -2       -2
 
-treeMinValue(a); // -> -13
-test_03:
-const a = new Node(42);
+// treeMinValue(a); // -> -13
+// test_03:
+// const a = new Node(42);
 
-//        42
+// //        42
 
-treeMinValue(a); // -> 42
+// treeMinValue(a); // -> 42
 
 const treeMinValue = (root) => {
     let min = null;
