@@ -28,7 +28,7 @@ employeeHeirarchy = {
 
 employeeCount(employeeHeirarchy,S) // 5
 employeeCount(employeeHeirarchy,W) // 2
-employeeCount(employeeHeirarchy,U) // 1
+employeeCount(employeeHeirarchy,U) 
 
 
 
