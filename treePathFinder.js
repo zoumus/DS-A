@@ -134,3 +134,36 @@
 //                6000
 
 // pathFinder(root, 3451); // -> [0, 1, 2, 3, ..., 3450, 3451]
+
+
+const pathFinder = (root, target) => {
+    let output = pathFiderHelper(root, target);
+    
+    if (output === null) {
+      return null;
+    } else {
+      output.reverse();
+    }
+};
+  
+const pathFinderHelper = (root, target) {
+    if (root === null) return null;
+    if (root.val === target) return [root.val];
+
+    const left = pathFinderHelper(root.left, target)
+    if (left !== null) {
+        left.push(root.val);
+        return left;
+    }
+
+    const right = pathFinderHelper(root.right, target)
+    if (right !== null) {
+        right.push(root.val);
+        return right;
+    }
+    return null
+}
+
+module.exports = {
+    pathFinder,
+};
