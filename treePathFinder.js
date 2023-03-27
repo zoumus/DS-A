@@ -137,13 +137,13 @@
 
 
 const pathFinder = (root, target) => {
-    let output = pathFiderHelper(root, target);
+    let output = pathFinderHelper(root, target);
     
     if (output === null) {
       return null;
     } else {
       output.reverse();
-    }
+    
 };
   
 const pathFinderHelper = (root, target) {
