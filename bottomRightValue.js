@@ -110,3 +110,19 @@
 // //      42
 
 // bottomRightValue(a); // -> 42
+
+
+const bottomRightValue = (root) => {
+    let queue = [root];
+    let current = null; //to be able to do line 20
+    
+    while (queue.length > 0) {
+      current = queue.shift();
+      
+      if(current.left !== null) queue.push(current.left);
+      if(current.right !== null) queue.push(cuuret.right);
+      // if(queue.lenngth === 0) return curret.val; (without lie 20)
+    }
+    
+    return current.val;
+};
