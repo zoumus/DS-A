@@ -105,3 +105,22 @@
 // [
 //   ['z']
 // ]
+
+const allTreePaths = (root) => {
+    if(root === null) return [];
+    if(root.left === null && root.right === null) return [[root.val]];
+    let result = [];
+    
+    let left = allTreePaths(root.left);
+    for(let subs of left) {
+      result.push([root.val, ...left]);
+    }
+    
+    let right = allTreePaths(root.right);
+    for(let subs of right) {
+      result.push([root.val, ...right]);
+    }
+    return result;
+};
+  
+  
