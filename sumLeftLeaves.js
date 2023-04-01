@@ -18,3 +18,24 @@
 
 // The number of nodes in the tree is in the range [1, 1000].
 // -1000 <= Node.val <= 1000
+
+var sumOfLeftLeaves = function(root) {
+    let sum = 0;
+	let stack = [root];
+
+	while(stack.length > 0) {
+		
+		let current = stack.pop();
+		if(current.left) {
+            if(!current.left.left && !current.left.right) {
+            sum += current.left.val;
+        } else {
+            stack.push(current.left)
+        }
+        } if (current.right) {
+            stack.push(current.right)
+        }
+    }
+    return sum;
+
+};
