@@ -20,3 +20,18 @@
 // 1 <= nums.length <= 3 * 104
 // -3 * 104 <= nums[i] <= 3 * 104
 // Each element in the array appears twice except for one element which appears only once.
+
+var singleNumber = function(nums) {
+    let output = {};
+
+    for(let num of nums) { //of for arrays
+        if (output[num])  {
+            output[num] += 1;
+        } else {
+            output[num] = 1;
+        }
+    }
+    for(let key in output) { // in for hashes
+        if(output[key] === 1) return key;
+    }
+};
