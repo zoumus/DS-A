@@ -98,4 +98,4 @@
 
 // levelAverages(q); // -> [ 13, 3, 9, 2, 42 ]
 // test_04:
-// levelAverages(null); // -> [ 
+// levelAverages(null); // -> [ ]
