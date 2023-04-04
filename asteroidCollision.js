@@ -23,3 +23,23 @@
 // 2 <= asteroids.length <= 104
 // -1000 <= asteroids[i] <= 1000
 // asteroids[i] != 0
+
+var asteroidCollision = function(asteroids) {
+    let stack = [ asteroids[0]];
+		for(let i = 1; i < asteroids.length;i++) {
+			let lastAst = stack[stack.length-1]
+			let currAst = asteroids[i]
+            if(lastAst > 0 && currAst < 0){
+                if(Math.abs(lastAst) < Math.abs(currAst)){
+                    stack.pop()
+                    i--
+                }
+                if(Math.abs(lastAst) === Math.abs(currAst)) {
+                    stack.pop()
+                }
+            } else {
+                stack.push(currAst)
+            }
+		}
+	return stack
+};
