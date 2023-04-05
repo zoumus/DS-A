@@ -16,3 +16,14 @@
 
 // The number of nodes in the list is in the range [1, 100].
 // 1 <= Node.val <= 100
+
+var middleNode = function(head) {
+    let pointer1 = head;
+    let pointer2 = head;
+
+    while(pointer2 !== null && pointer2.next !== null){
+        pointer1 = pointer1.next;
+        pointer2 = pointer2.next.next;
+    }
+    return pointer1;
+};
