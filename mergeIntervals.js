@@ -17,3 +17,19 @@
 // 1 <= intervals.length <= 104
 // intervals[i].length == 2
 // 0 <= starti <= endi <= 104
+
+var merge = function(intervals) {
+    intervals.sort((a,b)=>a[0]-b[0]);
+    stack = [intervals[0]];
+    for (let i = 1; i < intervals.length; i ++) {
+        let [x, y] = intervals[i];
+        let lastIndex = stack.length - 1;
+        let [stX, stY] = stack[lastIndex];
+        if (stY >= x && y > stY) {
+            stack[lastIndex][1] = y;
+        } else if (x > stY) {
+            stack.push(intervals[i]);
+        }
+    }
+    return stack;
+};
