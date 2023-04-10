@@ -55,3 +55,20 @@
 // operations[i] is "C", "D", "+", or a string representing an integer in the range [-3 * 104, 3 * 104].
 // For operation "+", there will always be at least two previous scores on the record.
 // For operations "C" and "D", there will always be at least one previous score on the record.
+
+var calPoints = function(operations) {
+    let stack = [];
+    for (let i = 0; i < operations.length; i ++) {
+        let op = operations[i];
+        if (op === "+") {
+            stack.push(stack[stack.length -1] + stack[stack.length -2]);
+        } else if (op === "D") {
+            stack.push(stack[stack.length -1] * 2);
+        } else if(op === "C") {
+            stack.pop()
+        } else {
+            stack.push(Number(op));
+        }
+    }
+    return stack.reduce((prev, cur) => prev + cur, 0);;
+};
