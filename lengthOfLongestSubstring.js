@@ -23,3 +23,24 @@
 
 // 0 <= s.length <= 5 * 104
 // s consists of English letters, digits, symbols and spaces.
+
+var lengthOfLongestSubstring = function(s) {
+    let left = 0;
+    let right = 0;
+
+    let maxLength = 0;
+    let window = new Set();
+
+    while (right < s.length) {
+        while (window.has(s[right])) {
+            window.delete(s[left]);
+            left ++;
+        }
+        
+        maxLength = Math.max(maxLength, (right - left) + 1);
+        window.add(s[right]);
+        right ++;
+        console.log(window);
+    }
+    return maxLength
+};
