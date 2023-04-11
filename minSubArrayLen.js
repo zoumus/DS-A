@@ -25,20 +25,20 @@
 // 1 <= nums[i] <= 104
 
 var minSubArrayLen = function(target, nums) {
-    let left = 0;
-    let total = 0;
-    let minSub = Infinity;
+    // let left = 0;
+    // let total = 0;
+    // let minSub = Infinity;
 
-    for(let i = 0; i < nums.length; i ++) {
-        total += nums[i];
+    // for(let i = 0; i < nums.length; i ++) {
+    //     total += nums[i];
 
-        while (total >= target) {
-            minSub = Math.min(minSub, i - left +1);
-            total -= nums[left];
-            left ++;
-        }
-    }
-    if (minSub == Infinity) return 0;
-    else return minSub
-    return minSub;
+    //     while (total >= target) {
+    //         minSub = Math.min(minSub, i - left +1);
+    //         total -= nums[left];
+    //         left ++;
+    //     }
+    // }
+    // if (minSub == Infinity) return 0;
+    // else return minSub
+    // return minSub;
 }
