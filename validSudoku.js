@@ -41,3 +41,30 @@
 // board.length == 9
 // board[i].length == 9
 // board[i][j] is a digit 1-9 or '.'.
+
+var isValidSudoku = function(board) {
+    let rows = {};
+    let cols = {};
+    let boxes = {};
+
+    for(let r = 0; r < board.length; r ++) {
+        for(let c = 0; c < board[0].length; c ++) {
+            let currVal = board[r][c];
+            if(currVal === '.') continue;
+
+            let boxCoord = `${Math.floor(r/3)}, ${Math.floor(c/3)}`; 
+            
+            if(!rows[r]) rows[r] = new Set();
+            if(!cols[c]) cols[c] = new Set();
+            if(!boxes[boxCoord]) boxes[boxCoord] = new Set();
+
+            
+            if(rows[r].has(currVal) || cols[c].has(currVal) || boxes[boxCoord].has(currVal)) return false;
+
+            rows[r].add(currVal);
+            cols[c].add(currVal);
+            boxes[boxCoord].add(currVal);
+        }
+    } 
+    return true;
+};
