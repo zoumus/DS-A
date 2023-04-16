@@ -19,3 +19,17 @@
 
 // The number of nodes in both trees is in the range [0, 100].
 // -104 <= Node.val <= 104
+
+var isSameTree = function(p, q) {
+    //return false if one node is null bbut the other is not
+    if (p && !q) return false;
+    if (!p && q) return false;
+
+    //return true if we reach the ends of the trees at the same time
+    if (!p && !q) return true;
+
+    //return false if the values don't match
+    if (p.val !== q.val) return false;
+
+    return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right));
+};
