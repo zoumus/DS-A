@@ -21,7 +21,7 @@ test_01:
 const x = new Node("x");
 const y = new Node("y");
 
-x = y;
+x.next = y;
 
 // x -> y
 
