@@ -19,3 +19,24 @@
 // -5000 <= Node.val <= 5000
 //  \
 // Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+var removeNthFromEnd = function(head, n) {
+    let fast = head;
+    let slow = fast;
+
+    let count = 0;
+
+    while (fast !== null && fast.next !== null) {
+        fast = fast.next;
+
+        if (count >= n) {
+            slow = slow.next
+        }
+        count ++
+    }
+
+    if ( count + 1 === n) return slow.next;
+
+    slow.next = slow.next.next
+    return head
+};
