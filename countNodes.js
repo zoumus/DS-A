@@ -35,3 +35,4 @@ var countNodes = function(root) {
         if(node.right !== null) stack.push(node.right); 
     }
     return count
+};
