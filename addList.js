@@ -136,4 +136,4 @@ class Node {
       if (current2 !== null) current2 = current2.next;
     }
     return head.next;
-  }
+  };
