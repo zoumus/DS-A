@@ -133,7 +133,7 @@ class Node {
       current.next = new Node(digit)
       current = current.next;
       if (current1 !== null) current1 = current1.next;
-      if (cl !== null) current2 = current2.next;
+      if (current2 !== null) current2 = current2.next;
     }
     return head.next;
   };
