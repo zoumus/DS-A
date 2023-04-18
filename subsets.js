@@ -40,5 +40,5 @@ var subsets = function(nums) {
         backtrack(i+1);
     }
     backtrack(0);
-    return ans
+    return ans;
 };
