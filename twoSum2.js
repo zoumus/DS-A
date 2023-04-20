@@ -39,5 +39,5 @@ var twoSum = function(numbers, target) {
         if(sum < target) left ++;
         else if(sum > target) right --;
         else return [left+1, right+1]
-    
+    }
 };
