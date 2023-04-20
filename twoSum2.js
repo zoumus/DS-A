@@ -29,7 +29,7 @@
 // -1000 <= target <= 1000
 // The tests are generated such that there is exactly one solution.
 
-var twoSum = function(numbers, target) {
+var twoSum = function(numbers, target) 
     let left = 0;
     let right = numbers.length - 1;
 
