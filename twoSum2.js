@@ -35,7 +35,7 @@ var twoSum = function(numbers, target) {
 
     while (left < right) {
         let sum = numbers[left] + numbers[right];
-
+        
         if(sum < target) left ++;
         else if(sum > target) right --;
         else return [left+1, right+1]
