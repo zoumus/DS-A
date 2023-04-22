@@ -22,7 +22,7 @@
 // Each element in the array appears twice except for one element which appears only once.
 
 var singleNumber = function(nums) {
-    let output = []
+    let output = 
 
     for(let num of nums) { //of for arrays
         if (output[num])  {
