@@ -16,7 +16,7 @@ d.next = e;
 
 sumList(a); // 19
 // test_01:
-const x = new Node
+const x = new Node(38);
 const y = new Node(4);
 
 x.next = y; // 38 -> 4
