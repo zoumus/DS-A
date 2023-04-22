@@ -24,5 +24,5 @@ sumList(x); // 42
 // test_02:
 const z = new Node(100);// 10
 sumList(z); // 100
-// test_03:
+// test_03
 sumList(null); // 0
