@@ -66,4 +66,5 @@ var isValidSudoku = function(board) {
             boxes[boxCoord].add(currVal);
         }
     } 
+
 };
