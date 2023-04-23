@@ -17,7 +17,7 @@
 
 // Constraints:
 
-
+ch element in the array appears twice except for one element which appears only once.
 
 var singleNumber = function(nums) {
     let output = {};
