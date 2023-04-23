@@ -110,5 +110,5 @@ const treeValueCount = (root, target) => {
       if(current.left) stack.push(current.left);
       if(current.right) stack.push(current.right);
     }
-
+    return count;
 };
