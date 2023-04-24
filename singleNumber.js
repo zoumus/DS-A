@@ -31,7 +31,7 @@ var singleNumber = function(nums) {
             output[num] = 1;
         }
     }
-    for(let key in output) { // in for hashes
+    for(let key in output) {
         if(output[key] === 1) return key;
     }
 };
