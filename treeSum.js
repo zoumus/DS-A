@@ -51,7 +51,7 @@
 // test_02:
 // treeSum(null); // -> 0
 
-const treeSum = (root) => {
+const treeSum = () => {
     let sum = 0;
     let stack = [ root ];
     while(stack.length > 0 && root !== null) {
