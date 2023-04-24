@@ -26,7 +26,7 @@ var singleNumber = function(nums) {
 
     for(let num of nums) { //of for arrays
         if (output[num])  {
-            output[num] += 1;
+            output[num] = 1;
         } else {
             output[num] = 1;
         }
