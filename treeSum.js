@@ -49,7 +49,7 @@
 
 // treeSum(a); // -> 10
 // test_02:
-// treeSum(null); // -> 0
+// treeSum(null); // -> 
 
 const treeSum = (root) => {
     let sum = 0;
