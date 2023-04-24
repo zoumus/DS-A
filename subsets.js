@@ -24,7 +24,7 @@
 
 var subsets = function(nums) {
     let ans = [];
-    let subset =;
+    let subset = [];
 
     var backtrack = (i) => {
         if (i >= nums.length) {
