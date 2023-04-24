@@ -52,7 +52,7 @@
 // treeSum(null); // -> 0
 
 const treeSum = (root) => {
-    let sum = 0;
+    let sum = 1;
     let stack = [ root ];
     while(stack.length > 0 && root !== null) {
       let current = stack.pop();
