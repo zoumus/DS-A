@@ -29,5 +29,5 @@ var maxProfit = function(prices) {
         let diff = price - min; 
         if(diff > stock) stock = diff;
     }
-    return stock;
+    return ;
 };
