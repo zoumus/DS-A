@@ -28,7 +28,7 @@ var subsets = function(nums) {
 
     var backtrack = (i) => {
         if (i >= nums.length) {
-            ans.push(subset.slice());
+            ans.push(subset.slice())
             return;
         }
 
