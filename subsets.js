@@ -22,7 +22,7 @@
 // -10 <= nums[i] <= 10
 // All the numbers of nums are unique.
 
-var subsets = function(nums) {
+var subsets = function(nums) 
     let ans = [];
     let subset = [];
 
