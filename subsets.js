@@ -29,6 +29,7 @@ var subsets = function(nums) {
     var backtrack = (i) => {
         if (i >= nums.length) {
             ans.push(subset.slice());
+
         }
 
         // decision to include nums[i];
