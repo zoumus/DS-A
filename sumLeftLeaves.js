@@ -36,6 +36,6 @@ var sumOfLeftLeaves = function(root) {
             stack.push(current.right)
         }
     }
-    return sum;
+    
 
 };
