@@ -38,7 +38,7 @@ var isValid = function(s) {
                 return false;
             }
         } else {
-            stack.push(input)
+            stack.push(input);
         }
     };
     
