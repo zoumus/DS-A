@@ -20,7 +20,7 @@
 // //  / \     \
 // // d   e     f
 
-// treeIncludes(a, "e"); // -> true
+treeIncludes(a, "e"); // -> true
 // test_01:
 // const a = new Node("a");
 // const b = new Node("b");
