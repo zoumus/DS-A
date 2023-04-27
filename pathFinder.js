@@ -129,7 +129,7 @@
 
 // pathFinder(root, 3451); // -> [0, 1, 2, 3, ..., 3450, 3451]
 
-const pathFinder = (root, target) => {
+const pathFinder = (root, target) => 
     if(root === null) return null;
     if(root.val === target) return [ root.val ];
     
