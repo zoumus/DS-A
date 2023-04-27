@@ -21,7 +21,7 @@
 
 var maxProfit = function(prices) {  
     let min = null;
-    let stock =
+    let stock = 0;
 
     for(let i = 0; i < prices.length; i ++) {
         let price = prices[i];
