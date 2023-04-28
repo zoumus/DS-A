@@ -26,3 +26,30 @@
 // n == grid[i].length
 // 1 <= m, n <= 300
 // grid[i][j] is '0' or '1'.
+
+
+var numIslands = function(grid) {
+    let count = 0;
+    let rows = grid.length;
+    let cols = grid[0].length;
+
+    const dfs = (y, z) => {
+	    if(y < 0 || z < 0 || y >= rows || z >= cols || grid[y][z] !== '1') return;
+        grid[y][z] = 'x'
+
+        dfs(y+1, z);
+        dfs(y, z+1);
+        dfs(y-1, z);
+        dfs(y, z-1);
+    }
+
+    for(let i = 0; i < rows; i ++) {
+        for(let j = 0; j < cols; j ++) {
+            if(grid[i][j] === '1') {
+                count ++;
+                dfs(i, j);
+            }
+        }
+    }
+    return count;
+}
