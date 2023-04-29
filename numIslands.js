@@ -51,5 +51,5 @@ var numIslands = function(grid) {
             }
         }
     }
-    // return count;
+    return count;
 }
