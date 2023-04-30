@@ -36,7 +36,7 @@ var subsets = function(nums) {
         backtrack(i+1);
         subset.pop();
         // decision not to include nums[i];
-        backtrack(i+1)
+        backtrack(i+1);
     }
     backtrack(0);
     return ans;
