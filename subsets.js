@@ -31,13 +31,12 @@ var subsets = function(nums) {
             ans.push(subset.slice());
             return;
         }
-
         // decision to include nums[i];
         subset.push(nums[i]);
         backtrack(i+1);
         subset.pop();
         // decision not to include nums[i];
-        backtrack(i+1);
+        backtrack(i+1)
     }
     backtrack(0);
     return ans;
