@@ -142,7 +142,7 @@ const pathFinder = (root, target) => {
     if (output === null) {
       return null;
     } else {
-      output.reverse();
+      output.reverse()
     }
 };
   
