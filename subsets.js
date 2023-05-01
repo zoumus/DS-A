@@ -32,7 +32,7 @@ var subsets = function(nums) {
             return;
         }
         // decision to include nums[i];
-        subset.push(nums[i])
+        subset.push(nums[i]);
         backtrack(i+1);
         subset.pop();
         // decision not to include nums[i];
