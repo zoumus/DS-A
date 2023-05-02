@@ -21,20 +21,20 @@
 // //  / \      \
 // // 4   -2     1
 
-// treeMinValue(a); // -> -2
-// test_01:
-// const a = new Node(5);
-// const b = new Node(11);
-// const c = new Node(3);
-// const d = new Node(4);
-// const e = new Node(14);
-// const f = new Node(12);
+treeMinValue(a); // -> -2
+test_01:
+const a = new Node(5);
+const b = new Node(11);
+const c = new Node(3);
+const d = new Node(4);
+const e = new Node(14);
+const f = new Node(12);
 
-// a.left = b;
-// a.right = c;
-// b.left = d;
-// b.right = e;
-// c.right = f;
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
 
 // //       5
 // //    /    \
