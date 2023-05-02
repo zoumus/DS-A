@@ -9,7 +9,7 @@
 // const e = new Node(-2);
 // const f = new Node(1);
 
-a.left = b;
+// a.left = b;
 // a.right = c;
 // b.left = d;
 // b.right = e;
