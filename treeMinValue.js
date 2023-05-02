@@ -37,21 +37,21 @@
 // c.right = f;
 
 // //       5
-// //    /    \
-// //   11     3
-// //  / \      \
-// // 4   14     12
+//    /    \
+//   11     3
+//  / \      \
+// 4   14     12
 
-// treeMinValue(a); // -> 3
-// test_02:
-// const a = new Node(-1);
-// const b = new Node(-6);
-// const c = new Node(-5);
-// const d = new Node(-3);
-// const e = new Node(-4);
-// const f = new Node(-13);
-// const g = new Node(-2);
-// const h = new Node(-2);
+treeMinValue(a); // -> 3
+test_02:
+const a = new Node(-1);
+const b = new Node(-6);
+const c = new Node(-5);
+const d = new Node(-3);
+const e = new Node(-4);
+const f = new Node(-13);
+const g = new Node(-2);
+const h = new Node(-2);
 
 // a.left = b;
 // a.right = c;
