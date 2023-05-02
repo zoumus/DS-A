@@ -71,11 +71,11 @@
 
 // treeMinValue(a); // -> -13
 // test_03:
-const a = new Node(42);
+// const a = new Node(42);
 
-//        42
+// //        42
 
-treeMinValue(a); // -> 42
+// treeMinValue(a); // -> 42
 
 const treeMinValue = (root) => {
     let min = null;
