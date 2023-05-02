@@ -78,7 +78,7 @@
 // treeMinValue(a); // -> 42
 
 const treeMinValue = (root) => {
-    let min = null
+    let min = null;
     let stack = [ root ];
     while(stack.length > 0) {
       let current = stack.pop();
