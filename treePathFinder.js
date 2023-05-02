@@ -146,7 +146,7 @@ const pathFinder = (root, target) => {
     }
 };
   
-const pathFinderHelper = (root, target) {
+const pathFinderHelper = (root, target) => {
     if (root === null) return null;
     if (root.val === target) return [root.val];
 
@@ -162,7 +162,7 @@ const pathFinderHelper = (root, target) {
         return right;
     }
     return null
-}
+};
 
 module.exports = {
     pathFinder,
