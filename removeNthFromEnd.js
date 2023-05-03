@@ -38,5 +38,5 @@ var removeNthFromEnd = function(head, n) {
     if ( count + 1 === n) return slow.next;
 
     slow.next = slow.next.next
-    return head
+    
 };
