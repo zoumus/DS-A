@@ -23,7 +23,6 @@
 var removeNthFromEnd = function(head, n) {
     let fast = head;
     let slow = fast;
-
     let count = 0;
 
     while (fast !== null && fast.next !== null) {
