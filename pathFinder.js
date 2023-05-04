@@ -137,7 +137,7 @@ const pathFinder = (root, target) => {
     if(leftPath !== null) return [root.val, ...leftPath];
     
     let rightPath = pathFinder(root.right, target);
-    // if(rightPath !== null) return [root.val, ...rightPath];
+    if(rightPath !== null) return [root.val, ...rightPath];
    
     return null;
   };
