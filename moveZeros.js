@@ -24,4 +24,4 @@ var moveZeroes = function(nums) {
     return nums
 };
 // time: O(n)
-space: O(1)
+// space: O(1)
