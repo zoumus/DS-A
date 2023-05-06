@@ -28,13 +28,13 @@ var middleNode = function(head) {
     return slow;
 };
 
-var middleNode = function(head) {
-    let pointer1 = head;
-    let pointer2 = head;
+// var middleNode = function(head) {
+//     let pointer1 = head;
+//     let pointer2 = head;
 
-    while(pointer2 !== null && pointer2.next !== null){
-        pointer1 = pointer1.next;
-        pointer2 = pointer2.next.next;
-    }
-    return pointer1;
-};
+//     while(pointer2 !== null && pointer2.next !== null){
+//         pointer1 = pointer1.next;
+//         pointer2 = pointer2.next.next;
+//     }
+//     return pointer1;
+// };
