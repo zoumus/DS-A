@@ -24,5 +24,5 @@ function fizzbuzz(n) {
     return answer;
 }
 
-//n = 3 => []
-// = 5 => 
+//n = 3 => ['1', '2', 'Fizz']
+// = 5 => ['1', '2', 'Fizz', '4', 'Buzz']
