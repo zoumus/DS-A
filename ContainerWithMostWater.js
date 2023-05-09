@@ -32,7 +32,7 @@ var maxArea = function(height) {
         } else {
             right --;
         }
-        length --
+        length --;
     }
     return max;
 };
