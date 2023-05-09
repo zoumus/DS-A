@@ -56,5 +56,5 @@ var minSubArrayLen = function(target, nums) {
             subarraySum += nums[end];
         }
     }
-    return minValue === Infinity ? 0 : minValue
+    return minValue === Infinity ? 0 : minValue;
 }
