@@ -52,7 +52,7 @@ var minSubArrayLen = function(target, nums) {
             subarraySum -= nums[start];
             start++;
         } else {
-            end++;
+            
             subarraySum += nums[end];
         }
     }
