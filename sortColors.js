@@ -15,3 +15,22 @@
 
 // n == nums.length
 // nums[i] is either 0, 1, or 2.
+
+
+var sortColors = function(nums) {
+    // let counts = [0, 0, 0];
+
+    // for(let i = 0; i < nums.length; i ++){
+    //     let num = nums[i];
+    //     counts[num] += 1;
+    // }
+    // let a = 0;
+    // for(let c = 0; c < counts.length; c ++){
+    //     let count = counts[c];
+    //     for(let d = 0; d < count; d ++) {
+    //         nums[a] = c;
+    //         a++;
+    //     }
+    // }
+    // return nums
+}
