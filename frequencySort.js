@@ -24,3 +24,29 @@
 
 // 1 <= s.length <= 5 * 105
 // s consists of uppercase and lowercase English letters and digits.
+
+var frequencySort = function(s) { //bucket sort
+    let freq =  {};
+
+   for(let chr of s) {
+       if(!freq[chr]) {
+           freq[chr] = 1;
+       } else freq[chr] += 1;
+   }
+   let bucket = [];
+   for(let key in freq) {
+       let value = freq[key];
+       if(bucket[value]) {
+           bucket[value] += key.repeat(value);
+       } else {
+           bucket[value] = key.repeat(value);
+       }
+   }
+   let str = "";
+   for(let i = bucket.length; i > 0; i--) {
+       if(bucket[i]) {
+           str += bucket[i];
+       }
+   }
+   return str;
+};
