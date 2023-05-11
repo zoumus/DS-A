@@ -1,8 +1,5 @@
 Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.
-
 Return the sorted string. If there are multiple answers, return any of them.
-
- 
 
 Example 1:
 
@@ -23,7 +20,6 @@ Output: "bbAa"
 Explanation: "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
  
-
 Constraints:
 
 1 <= s.length <= 5 * 105
