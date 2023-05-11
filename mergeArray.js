@@ -1,8 +1,5 @@
 Given an array of integers nums, sort the array in ascending order and return it.
-
 You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and with the smallest space complexity possible.
-
- 
 
 Example 1:
 
@@ -15,7 +12,6 @@ Input: nums = [5,1,1,2,0,0]
 Output: [0,0,1,1,2,5]
 Explanation: Note that the values of nums are not necessairly unique.
  
-
 Constraints:
 
 1 <= nums.length <= 5 * 104
