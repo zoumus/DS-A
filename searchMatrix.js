@@ -47,7 +47,7 @@ var searchMatrix = function(mat, target) {
             break;
         }
     }
-    if(top > bottom) return false;
+    if(top > bottom) return false
     let row = top + Math.floor((bottom-top)/2);
     let left = 0, right = cols-1;
     while(left <= right) {
