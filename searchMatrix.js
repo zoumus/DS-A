@@ -60,5 +60,5 @@ var searchMatrix = function(mat, target) {
             return true;
         }
     }
-    return false
+    return false;
 };
