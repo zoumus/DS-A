@@ -50,7 +50,7 @@ var searchMatrix = function(mat, target) {
     if(top > bottom) return false;
     let row = top + Math.floor((bottom-top)/2);
     let left = 0, right = cols-1;
-    while(left <= right) 
+    while(left <= right) {
         let mid = left + Math.floor((right-left)/2);
         if(target > mat[row][mid]) {
             left = mid + 1;
