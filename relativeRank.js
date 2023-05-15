@@ -23,3 +23,18 @@
 // 1 <= n <= 104
 // 0 <= score[i] <= 106
 // All the values in score are unique.
+
+function findRelativeRanks(score) {
+    const newArr = [...score].sort((a,b)=>b-a);
+    const res = [];
+    for(let num of score){
+        if(newArr.indexOf(num) === 0){
+            res.push("Gold Medal")
+        } else if(newArr.indexOf(num) === 1){
+            res.push("Silver Medal")
+        } else if(newArr.indexOf(num) === 2){
+            res.push("Bronze Medal")
+        } else (res.push((newArr.indexOf(num)+1).toString()));
+    }
+    return res;
+}
