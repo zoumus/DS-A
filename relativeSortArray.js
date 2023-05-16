@@ -16,3 +16,41 @@
 // 0 <= arr1[i], arr2[i] <= 1000
 // All the elements of arr2 are distinct.
 // Each arr2[i] is in arr1.
+
+
+ // create a hash table from arr1
+ // iterate over arr2 to create output into new array
+ // iterate over hashtable to output the remaining variables into the output array
+ // return the output array
+ 
+ var relativeSortArray = function(arr1, arr2) {
+    let count = {};
+    let outputArr = [];
+    let sortArr = [];
+
+    for(let i = 0; i < arr1.length; i++) {
+        let num1 = arr1[i];
+        if(count[num1]) {
+            count[num1] ++;
+        } else {
+            count[num1] = 1;
+        }
+    }
+    for(let i = 0; i < arr2.length; i++){
+        let num2 = arr2[i];
+        while(count[num2] > 0){
+            outputArr.push(num2);
+            count[num2] -= 1;
+        }
+    }
+    for(let key in count){
+        if(count[key] > 0) {
+            while(count[key] > 0) {
+                outputArr.push(key);
+                count[key] -= 1;
+            }
+        }
+    }
+    return outputArr;
+    
+}
