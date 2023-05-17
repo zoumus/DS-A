@@ -32,7 +32,7 @@ function findRelativeRanks(score) {
             res.push("Gold Medal")
         } else if(newArr.indexOf(num) === 1){
             res.push("Silver Medal")
-        } else if(newArr.indexOf(num) === 2){
+        } else if(newArr.indexOf(num) === 2)
             res.push("Bronze Medal")
         } else (res.push((newArr.indexOf(num)+1).toString()));
     }
