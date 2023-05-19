@@ -19,3 +19,25 @@
 // 1 <= nums.length <= 1000
 // -231 <= nums[i] <= 231 - 1
 // nums[i] != nums[i + 1] for all valid i.
+
+
+// time => O(n), space => O(1)
+    // for(let i = 0; i < nums.length; i ++) {
+    //     if(nums[i] > nums[i+1]){
+    //         return i;
+    //     }
+    // }
+    // return nums.length - 1;
+
+    // time => O(logn), space => O(1)
+    let left = 0, right = nums.length-1;
+    while(left < right) {
+        mid = Math.floor((right+left)/2)
+        if(nums[mid] > nums[mid + 1]){
+            right = mid;
+        }  else {
+            left = mid + 1
+        }
+    }
+    return left;
+
