@@ -21,7 +21,8 @@
 // nums[i] != nums[i + 1] for all valid i.
 
 
-// time => O(n), space => O(1)
+var findPeakElement = function(nums) {
+    // time => O(n), space => O(1)
     // for(let i = 0; i < nums.length; i ++) {
     //     if(nums[i] > nums[i+1]){
     //         return i;
@@ -40,4 +41,5 @@
         }
     }
     return left;
+};
 
