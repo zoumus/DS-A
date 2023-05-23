@@ -19,4 +19,4 @@
 // 0 <= starti <= endi <= 105
 // intervals is sorted by starti in ascending order.
 // newInterval.length == 2
-// 0 <= start <= end <= 105
+// 0 <= start <= end <= 10
