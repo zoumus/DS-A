@@ -30,3 +30,18 @@
 
 // The number of nodes in the list is in the range [1, 105].
 // 1 <= Node.val <= 105
+
+var deleteMiddle = function(head) {
+    if(!head || !head.next) return null;
+
+    let fast = head, slow = head;
+    let previous;
+
+    while(fast !== null && fast.next !== null) {
+        fast = fast.next.next;
+        previous = slow;
+        slow = slow.next;
+    }
+    previous.next = previous.next.next;
+    return head;
+};
