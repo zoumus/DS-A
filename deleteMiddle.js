@@ -45,12 +45,12 @@ var deleteMiddle = function(head) {
     previous.next = previous.next.next;
     return head;
 
-    let slow = head, fast = head.next;
+    // let slow = head, fast = head.next;
 
-    while(fast.next && fast.next.next) {
-        fast = fast.next.next;
-        slow = slow.next;
-    }
-    slow.next = slow.next.next;
-    return head;
+    // while(fast.next && fast.next.next) {
+    //     fast = fast.next.next;
+    //     slow = slow.next;
+    // }
+    // slow.next = slow.next.next;
+    // return head;
 };
