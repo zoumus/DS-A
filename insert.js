@@ -21,6 +21,8 @@
 // newInterval.length == 2
 // 0 <= start <= end <= 105
 
+
+var insert = function(intervals, newInterval) {
 // let n = intervals.length;
     // let mergedInt = newInterval;
     // let res = [];
