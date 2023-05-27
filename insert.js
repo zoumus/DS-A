@@ -20,3 +20,20 @@
 // intervals is sorted by starti in ascending order.
 // newInterval.length == 2
 // 0 <= start <= end <= 105
+
+// let n = intervals.length;
+    // let mergedInt = newInterval;
+    // let res = [];
+
+    // for(let i = 0; i < intervals.length; i ++) {
+    //     let curInt = intervals[i];
+
+    //     if(curInt[0] > mergedInt[1]) {
+    //         return [...res, mergedInt, ...intervals.splice(i)];
+    //     }  else if(mergedInt[0] >= curInt[1]) {
+    //         res.push(curInt);
+    //     } else {
+    //         mergedInt = [Math.min(mergedInt[0], curInt[0]),Math.max(mergedInt[1], curInt[1])]
+    //     }
+    // }
+    // return [mergedInt];
