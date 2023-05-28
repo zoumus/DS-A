@@ -22,6 +22,8 @@
 // The tree is guaranteed to be complete.
 
 var countNodes = function(root) {
+
+    //Iterative
     if(root === null) return null;
     let current = root;
     let stack = [root];
@@ -35,4 +37,15 @@ var countNodes = function(root) {
         if(node.right !== null) stack.push(node.right); 
     }
     return count
+
+    //Recursive
+    // count = 0;
+    // function dfs(node) {
+    //     if(!node) return
+    //     count ++;
+    //     dfs(node.left);
+    //     dfs(node.right);
+    // }
+    // dfs(root);
+    // return count;
 };
