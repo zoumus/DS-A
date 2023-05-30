@@ -62,4 +62,10 @@ const treeSum = (root) => {
       if(current.right) stack.push(current.right);
     }
     return sum;
+
+
+  // if(!root) return 0;
+  // let left = treeSum(root.left);
+  // let right = treeSum(root.right);
+  // return root.val + left + right;
   };
