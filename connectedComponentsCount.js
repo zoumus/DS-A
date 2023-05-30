@@ -38,3 +38,24 @@
 //   7: [0],
 //   8: []
 // }); // -> 5
+
+
+const connectedComponentsCount = (graph) => {
+    let visitedSet = new Set();
+    let count = 0;
+    for(let node in graph) {
+      if(traverse(graph, node, visitedSet) === true) count ++;
+    }
+    // console.log(visitedSet)
+    return count;
+  };
+  
+  const traverse = (graph, currNode, visitedSet) => {
+    if(visitedSet.has(String(currNode))) return false;
+    visitedSet.add(String(currNode));
+    
+    for(let neighbor of graph[currNode]) {
+      traverse(graph, neighbor, visitedSet)
+    }
+    return true;
+  }
