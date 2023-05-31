@@ -78,13 +78,13 @@
 // treeMinValue(a); // -> 42
 
 const treeMinValue = (root) => {
-    let min = null;
-    let stack = [ root ];
-    while(stack.length > 0) {
+    let min = Infinity;
+    let stack = [root];
+    while(stack.length) {
       let current = stack.pop();
-      if(min === null || min > current.val) min = current.val;
-       if(current.left) stack.push(current.left);
-       if(current.right) stack.push(current.right);
+      if(current.val < min) min = current.val;
+      if(current.left) stack.push(current.left);
+      if(current.right) stack.push(current.right);
     }
     return min;
   };
