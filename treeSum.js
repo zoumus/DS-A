@@ -63,7 +63,7 @@ const treeSum = (root) => {
     }
     return sum;
 
-  //
+  // Recursion
   // if(!root) return 0;
   // let left = treeSum(root.left);
   // let right = treeSum(root.right);
