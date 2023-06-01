@@ -24,12 +24,12 @@
 // test_01:
 // const a = new Node(1);
 // const b = new Node(6);
-const c = new Node(0);
-const d = new Node(3);
-const e = new Node(-6);
-const f = new Node(2);
-const g = new Node(2);
-const h = new Node(2);
+// const c = new Node(0);
+// const d = new Node(3);
+// const e = new Node(-6);
+// const f = new Node(2);
+// const g = new Node(2);
+// const h = new Node(2);
 
 // a.left = b;
 // a.right = c;
