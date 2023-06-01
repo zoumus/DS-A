@@ -59,7 +59,7 @@ const treeSum = (root) => {
       sum += current.val;
       
       if(current.left) stack.push(current.left);
-      if(current.right) stack.push(current.right);
+      if(current.right) stack.push(current.right)
     }
     return sum;
 
