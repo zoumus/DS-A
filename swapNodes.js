@@ -16,3 +16,20 @@
 // The number of nodes in the list is n.
 // 1 <= k <= n <= 105
 // 0 <= Node.val <= 100
+
+var swapNodes = function(head, k) {
+    let curr = head;
+    let right = head;
+
+    for(let i = 1; i < k; i++) {
+        curr = curr.next;
+    }
+    let left = curr;
+    while(curr.next) {
+        curr = curr.next;
+        right = right.next;
+    }
+    [left.val, right.val] = [right.val, left.val];
+    
+    return head;
+};
