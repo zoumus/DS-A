@@ -56,7 +56,7 @@ const treeSum = (root) => {
     let stack = [ root ];
     while(stack.length > 0 && root !== null) {
       let current = stack.pop();
-      sum += current.val;
+      sum += current.
       
       if(current.left) stack.push(current.left);
       if(current.right) stack.push(current.right);
