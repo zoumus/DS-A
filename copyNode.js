@@ -41,3 +41,20 @@
 // Node.val is unique for each node.
 // There are no repeated edges and no self-loops in the graph.
 // The Graph is connected and all nodes can be visited starting from the given node.
+
+var cloneGraph = function(node) {
+    // if(!node) return node;
+    let oldToNew = {};
+
+    function dfs(node) {
+        if(!node) return node;
+        if(oldToNew[node.val] !== undefined ) return oldToNew[node.val];
+        let copy = new Node(node.val);
+        oldToNew[node.val] = copy; 
+        for(let nei of node.neighbors) {
+            copy.neighbors.push(dfs(nei));
+        }
+        return copy;
+    }
+    return dfs(node);
+};
