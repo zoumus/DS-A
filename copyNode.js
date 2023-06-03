@@ -54,7 +54,7 @@ var cloneGraph = function(node) {
         for(let nei of node.neighbors) {
             copy.neighbors.push(dfs(nei));
         }
-        return copy;
+        return copy
     }
     return dfs(node);
 };
