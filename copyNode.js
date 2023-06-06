@@ -56,5 +56,5 @@ var cloneGraph = function(node) {
         }
         return copy;
     }
-    return dfs(node);
+    return dfs(node)
 };
