@@ -25,3 +25,23 @@
 
 // 1 <= changed.length <= 105
 // 0 <= changed[i] <= 105
+
+
+var findOriginalArray = function(changed) {
+    const ans = [];
+    const map = {};
+    changed.sort((a, b) => a - b);
+  
+    for (const val of changed) {
+      const target = val / 2;
+      if (target in map) {
+        map[target]--;
+        if (map[target] === 0) delete map[target];
+        ans.push(target);
+      } else {
+        map[val] = (map[val] || 0) + 1;
+      }
+    }
+  
+    return Object.keys(map).length === 0 ? ans : [];
+};
