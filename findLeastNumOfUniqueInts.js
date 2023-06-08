@@ -15,3 +15,16 @@
 // 1 <= arr.length <= 10^5
 // 1 <= arr[i] <= 10^9
 // 0 <= k <= arr.length
+
+var findLeastNumOfUniqueInts = function(arr, k) {
+    let map = {};
+    for(let i = 0; i < arr.length; i ++) {
+        map[arr[i]] = (map[arr[i]] || 0) + 1;
+    }
+    let reps = Object.values(map).sort((a,b)=>a-b);
+    for(let i = 0; i < reps.length; i ++) {
+        k -= reps[i];
+        if(k < 0) return reps.length - i;
+    }
+    return 0;
+};
