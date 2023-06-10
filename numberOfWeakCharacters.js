@@ -15,7 +15,7 @@
 // Example 3:
 
 // Input: properties = [[1,5],[10,4],[4,3]]
-// Output: 
+// Output: 1
 // Explanation: The third character is weak because the second character has a strictly greater attack and defense.
  
 // Constraints:
