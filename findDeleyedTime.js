@@ -5,6 +5,6 @@ function findDelayedArrivalTime(arrivalTime, delayedTime) {
     } else if(max > 24) {
         return max - 24;
     } else {
-        return max
+        return max;
     }
 }
