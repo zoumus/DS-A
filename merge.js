@@ -32,7 +32,6 @@ var merge = function(intervals) {
             res[res.length-1][0] = Math.min(start, prev_start);
             res[res.length-1][1] = Math.max(end, prev_end);
         } else {
-            res.push(interval);
         }
     }
     return res;
