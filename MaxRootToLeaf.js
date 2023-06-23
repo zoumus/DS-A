@@ -80,7 +80,7 @@ test_03:
 
 // const a = new Node(42);
 
-//        
+//        4
 
 // maxPathSum(a); // -> 42
 
