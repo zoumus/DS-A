@@ -82,7 +82,7 @@ test_03:
 
 //        42
 
-// maxPathSum(a); // -> 42
+// maxPathSum(a); // -> 
 
 const maxPathSum = (root) => {
     if(root === null) return -Infinity;// iInfinity it's ot gona interfer with any max value
