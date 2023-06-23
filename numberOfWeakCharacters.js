@@ -30,6 +30,6 @@ var numberOfWeakCharacters = function(properties) {
     for(let arr of properties){
         if(arr[1] < max)    count++
         max = Math.max(max, arr[1])
-    
+    }
     return count
 };
