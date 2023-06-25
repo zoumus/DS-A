@@ -17,4 +17,4 @@ const f = new Node('f');
 
 
 
-
+c.right = f;
