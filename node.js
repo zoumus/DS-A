@@ -14,7 +14,7 @@ const e = new Node('e');
 const f = new Node('f');
 
 
-
+a.right = c;
 b.left = d;
 b.right = e;
 c.right = f;
