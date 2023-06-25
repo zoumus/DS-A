@@ -16,5 +16,5 @@ const f = new Node('f');
 
 
 
-b.right = e;
+
 c.right = f;
