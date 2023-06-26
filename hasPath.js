@@ -69,10 +69,10 @@ const hasPath = (graph, src, dst) => {
   return false;
 //recursion
 
-if(src === dst) return true;
-for(let neighbor of graph[src]) {
-  if(hasPath(graph, neighbor, dst) === true) return true;
-}
-return false;
+// if(src === dst) return true;
+// for(let neighbor of graph[src]) {
+//   if(hasPath(graph, neighbor, dst) === true) return true;
+// }
+// return false;
 };
   
