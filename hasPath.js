@@ -66,7 +66,7 @@ const hasPath = (graph, src, dst) => {
     queue.push(neighbor)
     }
   }
-  return false
+  return false;
 //recursion
 
 // if(src === dst) return true;
