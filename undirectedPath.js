@@ -107,3 +107,35 @@
 // ];
 
 // undirectedPath(edges, 'r', 't'); // -> true
+
+
+const undirectedPath = (edges, nodeA, nodeB) => {
+    let graph = buildGraph(edges);
+    return hasPath(graph, nodeA, nodeB, new Set());
+};
+  
+function buildGraph(edges) {
+    let graph = {};
+
+    for(let edge of edges) {
+        let [a, b] = edge;
+        
+        if(!(a in graph)) graph[a] = [];
+        if(!(b in graph)) graph[b] = [];
+        graph[a].push(b);
+        graph[b].push(a);
+    }
+    return graph;
+}
+
+function hasPath(graph, nodeA, nodeB, newSet) {
+    if(nodeA === nodeB) return true;
+
+    if(newSet.has(nodeA)) return false;
+    newSet.add(nodeA);
+
+    for(let neighbor of graph[nodeA]) {
+        if(hasPath(graph, neighbor, nodeB, newSet) === true) return true;
+    }
+    return false;
+}
