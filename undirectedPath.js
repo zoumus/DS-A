@@ -104,6 +104,6 @@
 //   ['s', 'r'],
 //   ['t', 'q'],
 //   ['q', 'r'],
-// ];
+// ]
 
 // undirectedPath(edges, 'r', 't'); // -> true
