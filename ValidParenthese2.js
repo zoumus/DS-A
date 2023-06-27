@@ -24,7 +24,11 @@
 
 var isValid = function(s) { 
     let stack = [];
-    
+    let hash = {
+        '}' : '{',
+        ']' : '[',
+        ')' : '('
+    }
     
     for (let i = 0; i < s.length; i++) { 
         var input = s[i]; 
