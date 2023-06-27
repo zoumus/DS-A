@@ -36,9 +36,7 @@ var isValid = function(s) {
             if (stack.pop() !== hash[input] ) {
                 return false;
             }
-        } else {
-            stack.push(input); 
-        }
+        } 
     };
     return stack.length === 0
 }
