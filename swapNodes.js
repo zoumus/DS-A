@@ -17,7 +17,7 @@
 // 1 <= k <= n <= 105
 // 0 <= Node.val <= 100
 
-var swapNodes = function(h, k) {
+var swapNodes = function(head, k) {
     let curr = head;
     let right = head;
     
