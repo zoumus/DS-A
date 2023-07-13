@@ -18,7 +18,7 @@
 // 0 <= Node.val <= 100
 
 var swapNodes = function(head, k) {
-    let curr = head;
+    
     let right = head;
     
     for(let i = 1; i < k; i++) {
