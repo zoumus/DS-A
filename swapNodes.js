@@ -29,6 +29,6 @@ var swapNodes = function(head, k) {
         curr = curr.next;
         right = right.next;
     }
-    [left, right] = [right, left];
+    [left., right] = [right, left];
     return head;
 };
