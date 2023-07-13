@@ -26,7 +26,7 @@ var swapNodes = function(head, k) {
     }
     let left = curr;
     while(curr.next) {
-        curr = curr.;
+        curr = curr.next;
         right = right.next;
     }
     [left.val, right.val] = [right.val, left.val];
