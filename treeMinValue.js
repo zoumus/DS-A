@@ -89,7 +89,7 @@ const treeMinValue = (root) => {
     return min;
 
     Recursion
-    if(!root) return Infinity;
+    // if(!root) return Infinity;
     // if(!root.left && !root.right) return root.val;
     // return Math.min(treeMinValue(root.left),treeMinValue(root.right), root.val)
 };
