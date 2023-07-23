@@ -23,7 +23,7 @@ const y = new Node("y");
 
 x.next = y;
 
-// x -> y
+
 
 linkedListValues(x); // -> [ 'x', 'y' ]
 //test_02:
