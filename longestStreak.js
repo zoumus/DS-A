@@ -84,5 +84,5 @@ const longestStreak = (head) => {
       current = current.next;
       
     }
-    return longStreak;
+    // return longStreak;
   };
