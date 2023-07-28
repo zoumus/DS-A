@@ -24,7 +24,7 @@ Output: false
 
 
 
-// function searchTarget(matrix, target) {
+function searchTarget(matrix, target) {
 	
 // 	for (let i = 0; i < matrix.length; i ++) {
 // 		let sub = matrix[i];
