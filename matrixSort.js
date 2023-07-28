@@ -24,23 +24,23 @@ Output: false
 
 
 
-function searchTarget(matrix, target) {
+// function searchTarget(matrix, target) {
 	
-	for (let i = 0; i < matrix.length; i ++) {
-		let sub = matrix[i];
-        if(target > sub[sub.length - 1]) continue;
-		let left = sub[0];
-		let right = sub[sub.length - 1];
+// 	for (let i = 0; i < matrix.length; i ++) {
+// 		let sub = matrix[i];
+//         if(target > sub[sub.length - 1]) continue;
+// 		let left = sub[0];
+// 		let right = sub[sub.length - 1];
 		
-		while(left <= right) {
-			let mid = Math.floor((left+right)/2);
-			if(target === sub[mid]) return true;
-			if(target > sub[mid]) {
-				left = mid - 1;
-			} else {
-				right = mid + 1;
-			}
-		}
-}
-return false;
-}
+// 		while(left <= right) {
+// 			let mid = Math.floor((left+right)/2);
+// 			if(target === sub[mid]) return true;
+// 			if(target > sub[mid]) {
+// 				left = mid - 1;
+// 			} else {
+// 				right = mid + 1;
+// 			}
+// 		}
+// }
+// return false;
+// }
