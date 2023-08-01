@@ -18,6 +18,7 @@
 // -5 * 104 <= nums[i] <= 5 * 104
 
 var sortArray = function(nums) {
+
     let mid = Math.floor(nums.length/2);
     let left = nums.slice(0, mid);
     let right = nums.slice(mid);
