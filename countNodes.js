@@ -34,7 +34,7 @@
         // if(node !== null) count ++;
 
         // if(node.left !== null) stack.push(node.left);
-        // if(node.right !== null) stack.push(node.right); 
+        if(node.right !== null) stack.push(node.right); 
     }
     return count
 
