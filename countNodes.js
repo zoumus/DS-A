@@ -27,7 +27,7 @@
     // if(root === null) return null;
     // let current = root;
     // let stack = [root];
-    // let count = 0;
+    let count = 0;
 
     while(stack.length !== 0) {
         let node = stack.pop()
