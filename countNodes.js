@@ -21,22 +21,22 @@
 // 0 <= Node.val <= 5 * 104
 // The tree is guaranteed to be complete.
 
-var countNodes = function(root) {
+// var countNodes = function(root) {
 
     //Iterative
-    if(root === null) return null;
-    let current = root;
-    let stack = [root];
-    let count = 0;
+    // if(root === null) return null;
+    // let current = root;
+    // let stack = [root];
+    // let count = 0;
 
-    while(stack.length !== 0) {
-        let node = stack.pop()
-        if(node !== null) count ++;
+    // while(stack.length !== 0) {
+        // let node = stack.pop()
+        // if(node !== null) count ++;
 
-        if(node.left !== null) stack.push(node.left);
-        if(node.right !== null) stack.push(node.right); 
-    }
-    return count
+        // if(node.left !== null) stack.push(node.left);
+        // if(node.right !== null) stack.push(node.right); 
+    // }
+    // return count
 
     //Recursive
     // count = 0;
@@ -48,4 +48,4 @@ var countNodes = function(root) {
     // }
     // dfs(root);
     // return count;
-};
+// };
