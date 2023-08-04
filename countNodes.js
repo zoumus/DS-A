@@ -25,7 +25,7 @@
 
     //Iterative
     // if(root === null) return null;
-    // let current = root;
+    let current = root;
     let stack = [root];
     let count = 0;
 
