@@ -21,7 +21,7 @@
 // 0 <= Node.val <= 5 * 104
 // The tree is guaranteed to be complete.
 
-// var countNodes = function(root) {
+var countNodes = function(root) {
 
     //Iterative
     if(root === null) return null;
