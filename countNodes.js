@@ -29,7 +29,7 @@
     // let stack = [root];
     // let count = 0;
 
-    // while(stack.length !== 0) {
+    while(stack.length !== 0) {
         let node = stack.pop()
         if(node !== null) count ++;
 
