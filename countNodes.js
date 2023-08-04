@@ -35,7 +35,7 @@
 
         // if(node.left !== null) stack.push(node.left);
         // if(node.right !== null) stack.push(node.right); 
-    // }
+    }
     return count
 
     //Recursive
