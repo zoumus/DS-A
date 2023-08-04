@@ -30,8 +30,8 @@
     // let count = 0;
 
     // while(stack.length !== 0) {
-        // let node = stack.pop()
-        // if(node !== null) count ++;
+        let node = stack.pop()
+        if(node !== null) count ++;
 
         if(node.left !== null) stack.push(node.left);
         if(node.right !== null) stack.push(node.right); 
