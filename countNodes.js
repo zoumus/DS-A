@@ -24,7 +24,7 @@
 // var countNodes = function(root) {
 
     //Iterative
-    // if(root === null) return null;
+    if(root === null) return null;
     let current = root;
     let stack = [root];
     let count = 0;
