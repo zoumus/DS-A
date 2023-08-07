@@ -38,7 +38,7 @@ var minOperations = function(logs) {
             if (steps === 0){
                 steps = 0;
             } else {
-                 steps -= 1;
+                steps -= 1;
             }
         } else if (step === './') {
             steps = steps
@@ -46,6 +46,5 @@ var minOperations = function(logs) {
             steps += 1;
         }
     }
-    
     return steps;
 };

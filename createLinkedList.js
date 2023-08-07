@@ -13,13 +13,13 @@
 // createLinkedList([]);
 // // null
 
-const createLinkedList = (values) => {
-    let head = new Node(null);
-    let current = head
-    for (let i = 0; i < values.length; i ++) {
-      current.next = new Node(values[i]);
-      current = current.next;
-    }
-    return head.next;
-};
+// const createLinkedList = (values) => {
+//     let head = new Node(null);
+//     let current = head
+//     for (let i = 0; i < values.length; i ++) {
+//       current.next = new Node(values[i]);
+//       current = current.next;
+//     }
+//     return head.next;
+// };
 
