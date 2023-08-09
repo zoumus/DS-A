@@ -40,24 +40,24 @@ var insert = function(intervals, newInterval) {
     // }
     // return [mergedInt];
 
-    // let res = [];
-    // let start = 0;
-    // let end = 1
+    let res = [];
+    let start = 0;
+    let end = 1
 
-    // i = 0;
-    // while(i<intervals.length && intervals[i][end] < newInterval[start]) {
-    //     res.push(intervals[i]);
-    //     i++;
-    // }
-    // while(i<intervals.length && intervals[i][start] <= newInterval[end]) {
-    //     newInterval[0] = Math.min(intervals[i][start], newInterval[start]);
-    //     newInterval[1] = Math.max(intervals[i][end], newInterval[end]);
-    //     i++;
-    // }
-    // res.push(newInterval)
-    // while(i<intervals.length && intervals[i][start] > newInterval[end]) {
-    //     res.push(intervals[i]);
-    //     i++;
-    // }
-    // return res;
+    i = 0;
+    while(i<intervals.length && intervals[i][end] < newInterval[start]) {
+        res.push(intervals[i]);
+        i++;
+    }
+    while(i<intervals.length && intervals[i][start] <= newInterval[end]) {
+        newInterval[0] = Math.min(intervals[i][start], newInterval[start]);
+        newInterval[1] = Math.max(intervals[i][end], newInterval[end]);
+        i++;
+    }
+    res.push(newInterval)
+    while(i<intervals.length && intervals[i][start] > newInterval[end]) {
+        res.push(intervals[i]);
+        i++;
+    }
+    return res;
 };
