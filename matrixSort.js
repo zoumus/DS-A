@@ -32,12 +32,12 @@
 // 		let left = sub[0];
 // 		let right = sub[sub.length - 1];
 		
-		// while(left <= right) {
-		// 	let mid = Math.floor((left+right)/2);
-		// 	if(target === sub[mid]) return true;
-		// 	if(target > sub[mid]) {
-		// 		left = mid - 1;
-		// 	} else {
+		while(left <= right) {
+			let mid = Math.floor((left+right)/2);
+			if(target === sub[mid]) return true;
+			if(target > sub[mid]) {
+				left = mid - 1;
+			} else {
 // 				right = mid + 1;
 // 			}
 // 		}
