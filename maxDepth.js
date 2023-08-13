@@ -10,7 +10,7 @@
 // Input: root = [1,null,2]
 // Output: 2
 
-// var maxDepth = function(root) {
+var maxDepth = function(root) {
     if (!root) return 0;
     let left = maxDepth(root.left);
     let right = maxDepth(root.right);
