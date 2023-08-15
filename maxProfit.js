@@ -31,7 +31,6 @@ var maxProfit = function(prices) {
         if(difff > diff) diff = difff
             
     }
-    
     return diff;
     
 };
