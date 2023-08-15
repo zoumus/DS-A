@@ -81,9 +81,9 @@
 
 // maxPathSum(a); // -> 42
 
-// const maxPathSum = (root) => {
-//     if(root === null) return -Infinity
-//     if(!root.left && !root.right) return root.val;
-//     const maxChild = Math.max(maxPathSum(root.left), maxPathSum(root.right))
-//     return root.val + maxChild;
-// };
+const maxPathSum = (root) => {
+    if(root === null) return -Infinity
+    if(!root.left && !root.right) return root.val;
+    const maxChild = Math.max(maxPathSum(root.left), maxPathSum(root.right))
+    return root.val + maxChild;
+};
