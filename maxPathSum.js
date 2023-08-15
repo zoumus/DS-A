@@ -73,7 +73,7 @@
 // //     /       \
 // //    -1       -2
 
-maxPathSum(a); // -> -8
+// maxPathSum(a); // -> -8
 test_03:
 const a = new Node(42);
 
