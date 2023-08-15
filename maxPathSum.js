@@ -73,13 +73,13 @@
 // //     /       \
 // //    -1       -2
 
-// maxPathSum(a); // -> -8
-// test_03:
-// const a = new Node(42);
+maxPathSum(a); // -> -8
+test_03:
+const a = new Node(42);
 
-// //        42
+       42
 
-// maxPathSum(a); // -> 42
+maxPathSum(a); // -> 42
 
 const maxPathSum = (root) => {
     if(root === null) return -Infinity
