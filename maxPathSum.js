@@ -79,7 +79,7 @@
 
 // //        42
 
-maxPathSum(a); // -> 42
+// maxPathSum(a); // -> 42
 
 const maxPathSum = (root) => {
     if(root === null) return -Infinity
