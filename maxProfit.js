@@ -32,5 +32,4 @@ var maxProfit = function(prices) {
             
     }
     return diff;
-    
 };
