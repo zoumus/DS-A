@@ -90,6 +90,6 @@ const maxPathSum = (root) => {
     return root.val + Math.max(maxPathSum(root.left), maxPathSum(root.right));
 };
   
-// module.exports = {
-//     maxPathSum,
-// };
+module.exports = {
+    maxPathSum,
+};
