@@ -84,11 +84,11 @@ test_03:
 
 // maxPathSum(a); // -> 42
 
-const maxPathSum = (root) => {
-    if(root === null) return -Infinity;// iInfinity it's ot gona interfer with any max value
-    if (root.left === null && root.right === null) return root.val;
-    return root.val + Math.max(maxPathSum(root.left), maxPathSum(root.right));
-};
+// const maxPathSum = (root) => {
+//     if(root === null) return -Infinity;// iInfinity it's ot gona interfer with any max value
+//     if (root.left === null && root.right === null) return root.val;
+//     return root.val + Math.max(maxPathSum(root.left), maxPathSum(root.right));
+// };
   
 // module.exports = {
 //     maxPathSum,
