@@ -21,12 +21,12 @@
 //     intervals.sort((a, b) => a[0] - b[0]);
 //     let res = [intervals[0]];
     
-    // for(let i = 1; i < intervals.length; i++) {
-    //     let interval = intervals[i];
-    //     let prev_start = res[res.length-1][0];
-    //     let prev_end = res[res.length-1][1];
-    //     let start = interval[0];
-    //     let end = interval[1];
+    for(let i = 1; i < intervals.length; i++) {
+        let interval = intervals[i];
+        let prev_start = res[res.length-1][0];
+        let prev_end = res[res.length-1][1];
+        let start = interval[0];
+        let end = interval[1];
 
         if(prev_end >= start) {
             res[res.length-1][0] = Math.min(start, prev_start);
