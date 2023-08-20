@@ -26,15 +26,15 @@
 
 //     return merges(sortArray(left), sortArray(right));
 // };
-const merges = (left, right) => {
-    let merged = [];
-    while(left.length && right.length) {
-        if (left[0] > right[0]) {
-            merged.push(right.shift());
-        } else {
-            merged.push(left.shift());
-        }
-    }
+// const merges = (left, right) => {
+//     let merged = [];
+//     while(left.length && right.length) {
+//         if (left[0] > right[0]) {
+//             merged.push(right.shift());
+//         } else {
+//             merged.push(left.shift());
+//         }
+//     }
     
-    return [...merged, ...left, ...right];
-}
+//     return [...merged, ...left, ...right];
+// }
