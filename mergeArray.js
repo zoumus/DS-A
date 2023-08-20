@@ -17,15 +17,15 @@
 // 1 <= nums.length <= 5 * 104
 // -5 * 104 <= nums[i] <= 5 * 104
 
-var sortArray = function(nums) {
-    if(nums.length < 2) return nums;
+// var sortArray = function(nums) {
+//     if(nums.length < 2) return nums;
 
-    let mid = Math.floor(nums.length/2);
-    let left = nums.slice(0, mid);
-    let right = nums.slice(mid);
+//     let mid = Math.floor(nums.length/2);
+//     let left = nums.slice(0, mid);
+//     let right = nums.slice(mid);
 
-    return merges(sortArray(left), sortArray(right));
-};
+//     return merges(sortArray(left), sortArray(right));
+// };
 const merges = (left, right) => {
     let merged = [];
     while(left.length && right.length) {
