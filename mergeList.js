@@ -64,12 +64,12 @@
 // mergeLists(h, p);
 // // 15 -> 30 -> 67
 
-// class Node {
-//     constructor(val) {
-//       this.val = val;
-//       this.next = null;
-//     }
-//   }
+class Node {
+    constructor(val) {
+      this.val = val;
+      this.next = null;
+    }
+  }
   
   // const mergeLists = (head1, head2) => {
   //   if(head1 === null && head2 === null) return null;
