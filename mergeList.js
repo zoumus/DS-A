@@ -87,6 +87,6 @@ class Node {
   //   }
   // };
   
-  // module.exports = {
-  //   mergeLists,
-  // };
+  module.exports = {
+    mergeLists,
+  };
