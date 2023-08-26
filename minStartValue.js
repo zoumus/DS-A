@@ -27,8 +27,8 @@
  
 // Constraints:
 
-// 1 <= nums.length <= 100
-// -100 <= nums[i] <= 100
+1 <= nums.length <= 100
+-100 <= nums[i] <= 100
 
 var minStartValue = function(nums) {
     let min = 0;
