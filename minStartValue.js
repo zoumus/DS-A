@@ -30,15 +30,15 @@
 // 1 <= nums.length <= 100
 // -100 <= nums[i] <= 100
 
-var minStartValue = function(nums) {
-    let min = 0;
-    let sum = 0;
+// var minStartValue = function(nums) {
+//     let min = 0;
+//     let sum = 0;
 
-    for(let i = 0; i < nums.length; i ++) {
-        let num = nums[i];
-        sum += num;
+//     for(let i = 0; i < nums.length; i ++) {
+//         let num = nums[i];
+//         sum += num;
 
-        min = Math.min(min, sum); // min = -4
-    }
-    return min < 0 ? -min+1 : 1;
-};
+//         min = Math.min(min, sum); // min = -4
+//     }
+//     return min < 0 ? -min+1 : 1;
+// };
