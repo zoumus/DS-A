@@ -16,7 +16,7 @@ var moveZeroes = function(nums) {
         if(nums[i] !== 0) { // [1,3,12,0,0]
             nums[index] = nums[i];
             index ++; //index = 3
-        // } 
+        } 
 //     }
 //     for(let i = index; i < nums.length; i ++) {
 //         nums[i] = 0;
