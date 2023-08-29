@@ -17,11 +17,11 @@ var moveZeroes = function(nums) {
             nums[index] = nums[i];
             index ++; //index = 3
         } 
-    }
-    for(let i = index; i < nums.length; i ++) {
-        nums[i] = 0;
-    }
-    return nums
-};
+//     }
+//     for(let i = index; i < nums.length; i ++) {
+//         nums[i] = 0;
+//     }
+//     return nums
+// };
 // time: O(n)
 // space: O(1)
