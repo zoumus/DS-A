@@ -13,8 +13,8 @@ const d = new Node('d');
 const e = new Node('e');
 const f = new Node('f');
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
