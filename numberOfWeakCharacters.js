@@ -4,10 +4,10 @@
 
 // Example 1:
 
-// Input: properties = [[5,5],[6,3],[3,6]]
-// Output: 0
-// Explanation: No character has strictly greater attack and defense than the other.
-// Example 2:
+Input: properties = [[5,5],[6,3],[3,6]]
+Output: 0
+Explanation: No character has strictly greater attack and defense than the other.
+Example 2:
 
 Input: properties = [[2,2],[3,3]]
 Output: 1
