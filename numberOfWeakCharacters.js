@@ -18,7 +18,7 @@
 // Output: 1
 // Explanation: The third character is weak because the second character has a strictly greater attack and defense.
  
-// Constraints:
+Constraints:
 
 2 <= properties.length <= 105
 properties[i].length == 2
