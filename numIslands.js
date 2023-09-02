@@ -28,10 +28,10 @@
 // grid[i][j] is '0' or '1'.
 
 
-var numIslands = function(grid) {
-    let count = 0;
-    let rows = grid.length;
-    let cols = grid[0].length;
+// var numIslands = function(grid) {
+//     let count = 0;
+//     let rows = grid.length;
+//     let cols = grid[0].length;
 
     // const dfs = (y, z) => {
 	//     if(y < 0 || z < 0 || y >= rows || z >= cols || grid[y][z] !== '1') return;
