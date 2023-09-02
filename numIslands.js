@@ -43,13 +43,13 @@ var numIslands = function(grid) {
         dfs(y, z-1);
     }
 
-//     for(let i = 0; i < rows; i ++) {
-//         for(let j = 0; j < cols; j ++) {
-//             if(grid[i][j] === '1') {
-//                 count ++;
-//                 dfs(i, j);
-//             }
-//         }
-//     }
-//     return count;
-// }
+    for(let i = 0; i < rows; i ++) {
+        for(let j = 0; j < cols; j ++) {
+            if(grid[i][j] === '1') {
+                count ++;
+                dfs(i, j);
+            }
+        }
+    }
+    return count;
+}
