@@ -18,7 +18,7 @@
 
 
 // test_00:
-// console.log(pairProduct([3, 2, 5, 4, 1], 8)); // -> [1, 3]
+console.log(pairProduct([3, 2, 5, 4, 1], 8)); // -> [1, 3]
 // test_01:
 console.log(pairProduct([3, 2, 5, 4, 1], 10)); // -> [1, 2]
 // test_02:
