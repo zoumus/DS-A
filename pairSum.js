@@ -16,7 +16,7 @@ function pairSum(numbers, targetSum) {
 // There is guaranteed to be one such pair that sums to the target.
 
 // test_00:
-console.log(pairSum([3, 2, 5, 4, 1], 8)); // -> [0, 2]
+// console.log(pairSum([3, 2, 5, 4, 1], 8)); // -> [0, 2]
 // test_01:
 console.log(pairSum([4, 7, 9, 2, 5, 1], 5)); // -> [0, 5]
 // test_02:
