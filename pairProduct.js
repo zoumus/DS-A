@@ -3,18 +3,18 @@
 // There is guaranteed to be one such pair whose product is the target.
 
 
-// const pairProduct = (numbers, targetProduct) => {
-//     const nums = {};
-//       for(let i = 0; i < numbers.length; i ++) {
-//         let num = numbers[i];
-//         let y = targetProduct / num;
-//         if(nums[y] !== undefined) {
-//           return [nums[y], i];
-//         } else {
-//           nums[num] = i;
-//         } 
-//       }
-// };
+const pairProduct = (numbers, targetProduct) => {
+    const nums = {};
+      for(let i = 0; i < numbers.length; i ++) {
+        let num = numbers[i];
+        let y = targetProduct / num;
+        if(nums[y] !== undefined) {
+          return [nums[y], i];
+        } else {
+          nums[num] = i;
+        } 
+      }
+};
 
 
 // test_00:
