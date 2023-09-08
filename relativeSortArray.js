@@ -28,13 +28,13 @@
 //     let outputArr = [];
 //     let sortArr = [];
 
-    for(let i = 0; i < arr1.length; i++) {
-        let num1 = arr1[i];
-        if(count[num1]) {
-            count[num1] ++;
-        } else {
-            count[num1] = 1;
-        }
+    // for(let i = 0; i < arr1.length; i++) {
+    //     let num1 = arr1[i];
+    //     if(count[num1]) {
+    //         count[num1] ++;
+    //     } else {
+    //         count[num1] = 1;
+    //     }
     }
     for(let i = 0; i < arr2.length; i++){
         let num2 = arr2[i];
