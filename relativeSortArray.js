@@ -42,15 +42,15 @@
     //         outputArr.push(num2);
     //         count[num2] -= 1;
     //     }
-    }
-    for(let key in count){
-        if(count[key] > 0) {
-            while(count[key] > 0) {
-                outputArr.push(key);
-                count[key] -= 1;
-            }
-        }
-    }
-    return outputArr;
+//     }
+//     for(let key in count){
+//         if(count[key] > 0) {
+//             while(count[key] > 0) {
+//                 outputArr.push(key);
+//                 count[key] -= 1;
+//             }
+//         }
+//     }
+//     return outputArr;
     
-}
+// }
