@@ -36,12 +36,12 @@
     //         count[num1] = 1;
     //     }
     }
-    // for(let i = 0; i < arr2.length; i++){
-    //     let num2 = arr2[i];
-    //     while(count[num2] > 0){
-    //         outputArr.push(num2);
-    //         count[num2] -= 1;
-    //     }
+    for(let i = 0; i < arr2.length; i++){
+        let num2 = arr2[i];
+        while(count[num2] > 0){
+            outputArr.push(num2);
+            count[num2] -= 1;
+        }
     }
     for(let key in count){
         if(count[key] > 0) {
