@@ -23,10 +23,10 @@
  // iterate over hashtable to output the remaining variables into the output array
  // return the output array
  
-//  var relativeSortArray = function(arr1, arr2) {
-//     let count = {};
-//     let outputArr = [];
-//     let sortArr = [];
+ var relativeSortArray = function(arr1, arr2) {
+    let count = {};
+    let outputArr = [];
+    let sortArr = [];
 
     for(let i = 0; i < arr1.length; i++) {
         let num1 = arr1[i];
