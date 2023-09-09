@@ -67,18 +67,18 @@
 // removeNode(t, "t");
 // // null
 
-const removeNode = (head, targetVal) => {
-  if (head.val === targetVal) return head.next;
-  let current = head;
-  let newNode = null;
+// const removeNode = (head, targetVal) => {
+//   if (head.val === targetVal) return head.next;
+//   let current = head;
+//   let newNode = null;
   
-  while (current !== null) {
-    if (current.val === targetVal){
-      newNode.next = current.next;
-      break;
-    }
-    newNode = current;
-    current = current.next;
-  }
-  return head;
-};
+//   while (current !== null) {
+//     if (current.val === targetVal){
+//       newNode.next = current.next;
+//       break;
+//     }
+//     newNode = current;
+//     current = current.next;
+//   }
+//   return head;
+// };
