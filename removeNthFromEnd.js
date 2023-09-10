@@ -32,10 +32,10 @@ var removeNthFromEnd = function(head, n) {
             slow = slow.next
         }
         count ++
-    }
-    if ( count + 1 === n) return slow.next;
-    slow.next = slow.next.next
-    return head;
+    // }
+    // if ( count + 1 === n) return slow.next;
+    // slow.next = slow.next.next
+    // return head;
 
     // let fast = head, slow = head;
 
