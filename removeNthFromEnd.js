@@ -28,10 +28,10 @@ var removeNthFromEnd = function(head, n) {
     while (fast !== null && fast.next !== null) {
         fast = fast.next;
 
-        // if (count >= n) {
-        //     slow = slow.next
-        // }
-        // count ++
+        if (count >= n) {
+            slow = slow.next
+        }
+        count ++
     // }
     // if ( count + 1 === n) return slow.next;
     // slow.next = slow.next.next
