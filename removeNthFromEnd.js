@@ -20,13 +20,13 @@
 //  \
 // Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
 
-// var removeNthFromEnd = function(head, n) {
-//     let fast = head;
-//     let slow = fast;
-//     let count = 0;
+var removeNthFromEnd = function(head, n) {
+    let fast = head;
+    let slow = fast;
+    let count = 0;
 
-//     while (fast !== null && fast.next !== null) {
-//         fast = fast.next;
+    while (fast !== null && fast.next !== null) {
+        fast = fast.next;
 
         // if (count >= n) {
         //     slow = slow.next
