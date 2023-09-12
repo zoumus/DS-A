@@ -36,17 +36,17 @@
     // let rows = mat.length;
     // let cols = mat[0].length;
 
-    let top = 0, bottom = rows-1;
-    while(top <= bottom) {
-        let row = top + Math.floor((bottom-top)/2);
-        if(target > mat[row][cols-1]) {
-            top = row + 1;
-        } else if(target < mat[row][0]) {
-            bottom = row - 1
-        } else {
-            break;
-        }
-    }
+    // let top = 0, bottom = rows-1;
+    // while(top <= bottom) {
+    //     let row = top + Math.floor((bottom-top)/2);
+    //     if(target > mat[row][cols-1]) {
+    //         top = row + 1;
+    //     } else if(target < mat[row][0]) {
+    //         bottom = row - 1
+    //     } else {
+    //         break;
+    //     }
+    // }
     if(top > bottom) return false;
     let row = top + Math.floor((bottom-top)/2);
     let left = 0, right = cols-1;
