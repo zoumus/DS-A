@@ -49,10 +49,10 @@
     // }
     // if(top > bottom) return false;
     // let row = top + Math.floor((bottom-top)/2);
-    // let left = 0, right = cols-1;
-    // while(left <= right) {
-    //     let mid = left + Math.floor((right-left)/2);
-    //     if(target > mat[row][mid]) {
+    let left = 0, right = cols-1;
+    while(left <= right) {
+        let mid = left + Math.floor((right-left)/2);
+        if(target > mat[row][mid]) {
             left = mid + 1;
         } else if(target < mat[row][mid]) {
             right = mid - 1
