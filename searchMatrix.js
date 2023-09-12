@@ -21,7 +21,7 @@
 // 1 <= m, n <= 100
 // -104 <= matrix[i][j], target <= 104
 
-// var searchMatrix = function(mat, target) {
+var searchMatrix = function(mat, target) {
     // ** linear solution
     // for(let i = 0; i < mat.length; i ++){
     //     for(let j=0;j<mat[i].length;j++){
