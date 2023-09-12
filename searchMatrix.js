@@ -33,8 +33,8 @@
     // return false
 
     // ** log(n)+log(m) => log(n*m)
-    // let rows = mat.length;
-    // let cols = mat[0].length;
+    let rows = mat.length;
+    let cols = mat[0].length;
 
     let top = 0, bottom = rows-1;
     while(top <= bottom) {
