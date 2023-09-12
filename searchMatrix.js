@@ -47,8 +47,8 @@
     //         break;
     //     }
     // }
-    // if(top > bottom) return false;
-    // let row = top + Math.floor((bottom-top)/2);
+    if(top > bottom) return false;
+    let row = top + Math.floor((bottom-top)/2);
     let left = 0, right = cols-1;
     while(left <= right) {
         let mid = left + Math.floor((right-left)/2);
