@@ -53,12 +53,12 @@
     // while(left <= right) {
     //     let mid = left + Math.floor((right-left)/2);
     //     if(target > mat[row][mid]) {
-        //     left = mid + 1;
-        // } else if(target < mat[row][mid]) {
-        //     right = mid - 1
-        // } else {
-        //     return true;
-        // }
-//     }
-//     return false;
-// };
+            left = mid + 1;
+        } else if(target < mat[row][mid]) {
+            right = mid - 1
+        } else {
+            return true;
+        }
+    }
+    return false;
+};
