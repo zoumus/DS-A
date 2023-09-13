@@ -34,13 +34,13 @@
     // }
     // return nums
 
-//     let zeros = 0, ones = 0, twos = 0;
+    let zeros = 0, ones = 0, twos = 0;
 
-//     for(let n of nums){
-//         n === 0 ? zeros++ : n === 1 ? ones++ : twos++;
-//     }
-//     for(let i = 0; i < nums.length; i++){
-//         i < zeros ? nums[i] = 0 : i < zeros+ones ? nums[i] = 1 : nums[i] = 2;
-//     }
-//     return nums;
-// }
+    for(let n of nums){
+        n === 0 ? zeros++ : n === 1 ? ones++ : twos++;
+    }
+    for(let i = 0; i < nums.length; i++){
+        i < zeros ? nums[i] = 0 : i < zeros+ones ? nums[i] = 1 : nums[i] = 2;
+    }
+    return nums;
+}
