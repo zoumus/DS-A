@@ -17,7 +17,7 @@
 // nums[i] is either 0, 1, or 2.
 
 
-var sortColors = function(nums) {
+// var sortColors = function(nums) {
     // let counts = [0, 0, 0];
 
     // for(let i = 0; i < nums.length; i ++){
