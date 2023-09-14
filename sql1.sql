@@ -81,7 +81,7 @@ Products with product_id = 5 is ordered in February a total of (50 + 50) = 100.
 
 select product_name, Sum(unit) As unit
 from products
--- join orders on products.product_id = orders.product_id
+join orders on products.product_id = orders.product_id
 -- where year(order_date) = 2020 and month(order_date) = 02
 -- group by orders.product_id
 -- having Sum(unit) >= 100
