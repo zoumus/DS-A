@@ -19,15 +19,15 @@
 // 1 <= prices.length <= 105
 // 0 <= prices[i] <= 104
 
-// var maxProfit = function(prices) {  
-//     let min = null;
-//     let stock = 0;
+var maxProfit = function(prices) {  
+    let min = null;
+    let stock = 0;
 
-//     for(let i = 0; i < prices.length; i ++) {
-//         let price = prices[i];
-//         if(price < min || min === null) min = price;
-//         let diff = price - min; 
-//         if(diff > stock) stock = diff;
-//     }
-//     return stock; 
-// };
+    for(let i = 0; i < prices.length; i ++) {
+        let price = prices[i];
+        if(price < min || min === null) min = price;
+        let diff = price - min; 
+        if(diff > stock) stock = diff;
+    }
+    return stock; 
+};
