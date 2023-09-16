@@ -22,22 +22,22 @@
 // -10 <= nums[i] <= 10
 // All the numbers of nums are unique.
 
-var subsets = function(nums) {
-    let ans = [];
-    let subset = [];
+// var subsets = function(nums) {
+//     let ans = [];
+//     let subset = [];
 
-    var backtrack = (i) => {
-        if (i >= nums.length) {
-            ans.push(subset.slice());
-            return;
-        }
-        // decision to include nums[i];
-        subset.push(nums[i]);
-        backtrack(i+1);
-        subset.pop();
-        // decision not to include nums[i];
-        backtrack(i+1);
-    }
-    backtrack(0);
-    return ans;
-};
+//     var backtrack = (i) => {
+//         if (i >= nums.length) {
+//             ans.push(subset.slice());
+//             return;
+//         }
+//         // decision to include nums[i];
+//         subset.push(nums[i]);
+//         backtrack(i+1);
+//         subset.pop();
+//         // decision not to include nums[i];
+//         backtrack(i+1);
+//     }
+//     backtrack(0);
+//     return ans;
+// };
