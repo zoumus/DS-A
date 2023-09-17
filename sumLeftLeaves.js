@@ -23,19 +23,19 @@ var sumOfLeftLeaves = function(root) {
     let sum = 0;
 	let stack = [root];
 
-	while(stack.length > 0) {
+// 	while(stack.length > 0) {
 		
-		let current = stack.pop();
-		if(current.left) {
-            if(!current.left.left && !current.left.right) {
-            sum += current.left.val;
-        } else {
-            stack.push(current.left)
-        }
-        } if (current.right) {
-            stack.push(current.right)
-        }
-    }
-    return sum;
+// 		let current = stack.pop();
+// 		if(current.left) {
+//             if(!current.left.left && !current.left.right) {
+//             sum += current.left.val;
+//         } else {
+//             stack.push(current.left)
+//         }
+//         } if (current.right) {
+//             stack.push(current.right)
+//         }
+//     }
+//     return sum;
 
-};
+// };
