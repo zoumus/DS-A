@@ -25,4 +25,4 @@
 // const z = new Node(100);// 10
 // sumList(z); // 100
 // // test_03:
-sumList(null); // 0
+// sumList(null); // 0
