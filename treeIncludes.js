@@ -120,19 +120,19 @@
 // test_05:
 // treeIncludes(null, "b"); // -> false
 
-const treeIncludes = (root, target) => {
-    let stack = [ root ];
-    let result = []; //
-    while (stack.length > 0 && root !== null) {
-      let current = stack.pop();
-      result.push(current.val); //if(current.val === target) return true;
+// const treeIncludes = (root, target) => {
+//     let stack = [ root ];
+//     let result = []; //
+//     while (stack.length > 0 && root !== null) {
+//       let current = stack.pop();
+//       result.push(current.val); //if(current.val === target) return true;
       
       
-      if (current.left) stack.push(current.left);
-      if (current.right) stack.push(current.right);
-    }
-    return result.includes(target); // return false
-  };
+//       if (current.left) stack.push(current.left);
+//       if (current.right) stack.push(current.right);
+//     }
+//     return result.includes(target); // return false
+//   };
 
   //Recursio: 
   // const treeIncludes = (root, target) => {
