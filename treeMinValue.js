@@ -86,7 +86,7 @@
 //       if(current.left) stack.push(current.left);
 //       if(current.right) stack.push(current.right);
 //     }
-    return min;
+    // return min;
 
     //Recursion
     // if(!root) return Infinity;
