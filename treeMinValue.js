@@ -77,15 +77,15 @@
 
 // treeMinValue(a); // -> 42
 
-const treeMinValue = (root) => {
-    let min = Infinity;
-    let stack = [root];
-    while(stack.length) {
-      let current = stack.pop();
-      if(current.val < min) min = current.val;
-      if(current.left) stack.push(current.left);
-      if(current.right) stack.push(current.right);
-    }
+// const treeMinValue = (root) => {
+//     let min = Infinity;
+//     let stack = [root];
+//     while(stack.length) {
+//       let current = stack.pop();
+//       if(current.val < min) min = current.val;
+//       if(current.left) stack.push(current.left);
+//       if(current.right) stack.push(current.right);
+//     }
     return min;
 
     //Recursion
