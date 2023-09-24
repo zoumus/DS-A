@@ -156,12 +156,12 @@ const pathFinderHelper = (root, target) => {
         return left;
     }
 
-    // const right = pathFinderHelper(root.right, target)
-    // if (right !== null) {
-    //     right.push(root.val);
-    //     return right;
-    // }
-    // return null
+    const right = pathFinderHelper(root.right, target)
+    if (right !== null) {
+        right.push(root.val);
+        return right;
+    }
+    return null
 // };
 
 // module.exports = {
