@@ -162,8 +162,8 @@ const pathFinderHelper = (root, target) => {
         return right;
     }
     return null
-};
+// };
 
-module.exports = {
-    pathFinder,
-};
+// module.exports = {
+//     pathFinder,
+// };
