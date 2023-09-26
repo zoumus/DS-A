@@ -47,12 +47,12 @@
 //     let cols = {};
 //     let boxes = {};
 
-    // for(let r = 0; r < board.length; r ++) {
-    //     for(let c = 0; c < board[0].length; c ++) {
-    //         let currVal = board[r][c];
-    //         if(currVal === '.') continue;
+    for(let r = 0; r < board.length; r ++) {
+        for(let c = 0; c < board[0].length; c ++) {
+            let currVal = board[r][c];
+            if(currVal === '.') continue;
 
-    //         let boxCoord = `${Math.floor(r/3)}, ${Math.floor(c/3)}`; 
+            let boxCoord = `${Math.floor(r/3)}, ${Math.floor(c/3)}`; 
             
             if(!rows[r]) rows[r] = new Set();
             if(!cols[c]) cols[c] = new Set();
