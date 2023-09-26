@@ -61,10 +61,10 @@
             
             // if(rows[r].has(currVal) || cols[c].has(currVal) || boxes[boxCoord].has(currVal)) return false;
 
-//             rows[r].add(currVal);
-//             cols[c].add(currVal);
-//             boxes[boxCoord].add(currVal);
-//         }
-//     } 
-//     return true;
-// };
+            rows[r].add(currVal);
+            cols[c].add(currVal);
+            boxes[boxCoord].add(currVal);
+        }
+    } 
+    return true;
+};
