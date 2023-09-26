@@ -54,12 +54,12 @@
 
     //         let boxCoord = `${Math.floor(r/3)}, ${Math.floor(c/3)}`; 
             
-            if(!rows[r]) rows[r] = new Set();
-            if(!cols[c]) cols[c] = new Set();
-            if(!boxes[boxCoord]) boxes[boxCoord] = new Set();
+            // if(!rows[r]) rows[r] = new Set();
+            // if(!cols[c]) cols[c] = new Set();
+            // if(!boxes[boxCoord]) boxes[boxCoord] = new Set();
 
             
-            if(rows[r].has(currVal) || cols[c].has(currVal) || boxes[boxCoord].has(currVal)) return false;
+            // if(rows[r].has(currVal) || cols[c].has(currVal) || boxes[boxCoord].has(currVal)) return false;
 
             rows[r].add(currVal);
             cols[c].add(currVal);
