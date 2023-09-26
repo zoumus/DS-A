@@ -42,10 +42,10 @@
 // board[i].length == 9
 // board[i][j] is a digit 1-9 or '.'.
 
-// var isValidSudoku = function(board) {
-//     let rows = {};
-//     let cols = {};
-//     let boxes = {};
+var isValidSudoku = function(board) {
+    let rows = {};
+    let cols = {};
+    let boxes = {};
 
     for(let r = 0; r < board.length; r ++) {
         for(let c = 0; c < board[0].length; c ++) {
