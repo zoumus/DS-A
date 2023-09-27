@@ -30,8 +30,8 @@
 //         ')' : '('
 //     }
     
-    for (let i = 0; i < s.length; i++) { 
-        var input = s[i]; 
+    // for (let i = 0; i < s.length; i++) { 
+    //     var input = s[i]; 
         // if (input in hash) {
         //     if (stack.pop() !== hash[input] ) {
         //         return false;
