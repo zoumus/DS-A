@@ -36,9 +36,9 @@
         //     if (stack.pop() !== hash[input] ) {
         //         return false;
         //     }
-//         } else {
-//             stack.push(input);
-//         }
-//     };
-//     return stack.length === 0
-// }
+        } else {
+            stack.push(input);
+        }
+    };
+    return stack.length === 0
+}
