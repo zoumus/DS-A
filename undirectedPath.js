@@ -109,10 +109,10 @@
 // undirectedPath(edges, 'r', 't'); // -> true
 
 
-// const undirectedPath = (edges, nodeA, nodeB) => {
-//     let graph = buildGraph(edges);
-//     return hasPath(graph, nodeA, nodeB, new Set());
-// };
+const undirectedPath = (edges, nodeA, nodeB) => {
+    let graph = buildGraph(edges);
+    return hasPath(graph, nodeA, nodeB, new Set());
+};
   
 function buildGraph(edges) {
     let graph = {};
