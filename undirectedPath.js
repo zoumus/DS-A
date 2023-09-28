@@ -128,14 +128,14 @@
 //     return graph;
 // }
 
-function hasPath(graph, nodeA, nodeB, newSet) {
-    if(nodeA === nodeB) return true;
+// function hasPath(graph, nodeA, nodeB, newSet) {
+//     if(nodeA === nodeB) return true;
 
-    if(newSet.has(nodeA)) return false;
-    newSet.add(nodeA);
+//     if(newSet.has(nodeA)) return false;
+//     newSet.add(nodeA);
 
-    for(let neighbor of graph[nodeA]) {
-        if(hasPath(graph, neighbor, nodeB, newSet) === true) return true;
-    }
-    return false;
-}
+//     for(let neighbor of graph[nodeA]) {
+//         if(hasPath(graph, neighbor, nodeB, newSet) === true) return true;
+//     }
+//     return false;
+// }
