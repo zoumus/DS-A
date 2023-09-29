@@ -21,17 +21,16 @@
 // first counter open parentheses = 1;
 // second counter closed parentheses = 1;
 
-function validParanntheses(str) {
-    let openCount = 0;
-    let output = 0; 
-    for(let i = 0; i < str.length; i ++) { 
-        let char = str[i];
-        if(char === '('){
-            openCount ++;}
-        if(char === ')') { 
-            if(output < openCount) output = openCount; 
-            openCount --; 
-        }}
-    return output
+// function validParanntheses(str) {
+//     let openCount = 0;
+//     let output = 0; 
+//     for(let i = 0; i < str.length; i ++) { 
+//         let char = str[i];
+//         if(char === '('){
+//             openCount ++;}
+//         if(char === ')') { 
+//             if(output < openCount) output = openCount; 
+//             openCount --; 
+//         }}
+//     return output
 }
-

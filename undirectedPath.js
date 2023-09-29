@@ -61,7 +61,6 @@
 //   ['q', 't'],
 // ];
 
-
 // undirectedPath(edges, 'a', 'b'); // -> true
 // test_06:
 // const edges = [
@@ -113,7 +112,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
     let graph = buildGraph(edges);
     return hasPath(graph, nodeA, nodeB, new Set());
 };
-  
+
 function buildGraph(edges) {
     let graph = {};
 
@@ -122,6 +121,7 @@ function buildGraph(edges) {
         
         if(!(a in graph)) graph[a] = [];
         if(!(b in graph)) graph[b] = [];
+
         graph[a].push(b);
         graph[b].push(a);
     }
