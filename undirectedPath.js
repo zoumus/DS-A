@@ -113,11 +113,11 @@
 //     return hasPath(graph, nodeA, nodeB, new Set());
 // };
 
-function buildGraph(edges) {
-    let graph = {};
+// function buildGraph(edges) {
+//     let graph = {};
 
-    for(let edge of edges) {
-        let [a, b] = edge;
+//     for(let edge of edges) {
+//         let [a, b] = edge;
         
         if(!(a in graph)) graph[a] = [];
         if(!(b in graph)) graph[b] = [];
