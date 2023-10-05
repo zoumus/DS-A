@@ -51,21 +51,21 @@
 // test_02:
 // treeSum(null); // -> 0
 
-const treeSum = (root) => {
-    let sum = 0;
-    let stack = [ root ];
-    while(stack.length > 0 && root !== null) {
-      let current = stack.pop();
-      sum += current.val;
+// const treeSum = (root) => {
+//     let sum = 0;
+//     let stack = [ root ];
+//     while(stack.length > 0 && root !== null) {
+//       let current = stack.pop();
+//       sum += current.val;
       
-      if(current.left) stack.push(current.left);
-      if(current.right) stack.push(current.right);
-    }
-    return sum;
+//       if(current.left) stack.push(current.left);
+//       if(current.right) stack.push(current.right);
+//     }
+//     return sum;
 
   // Recursion
   // if(!root) return 0;
   // let left = treeSum(root.left);
   // let right = treeSum(root.right);
   // return root.val + left + right;
-  };
+  // };
