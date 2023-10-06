@@ -146,15 +146,15 @@
 //     }
 // };
   
-// const pathFinderHelper = (root, target) => {
-//     if (root === null) return null;
-//     if (root.val === target) return [root.val];
+const pathFinderHelper = (root, target) => {
+    if (root === null) return null;
+    if (root.val === target) return [root.val];
 
-//     const left = pathFinderHelper(root.left, target)
-//     if (left !== null) {
-//         left.push(root.val);
-//         return left;
-//     }
+    const left = pathFinderHelper(root.left, target)
+    if (left !== null) {
+        left.push(root.val);
+        return left;
+    }
 
     const right = pathFinderHelper(root.right, target)
     if (right !== null) {
