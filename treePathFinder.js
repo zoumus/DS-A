@@ -136,15 +136,15 @@
 // pathFinder(root, 3451); // -> [0, 1, 2, 3, ..., 3450, 3451]
 
 
-const pathFinder = (root, target) => {
-    let output = pathFinderHelper(root, target);
+// const pathFinder = (root, target) => {
+//     let output = pathFinderHelper(root, target);
     
-    if (output === null) {
-      return null;
-    } else {
-      output.reverse();
-    }
-};
+//     if (output === null) {
+//       return null;
+//     } else {
+//       output.reverse();
+//     }
+// };
   
 const pathFinderHelper = (root, target) => {
     if (root === null) return null;
