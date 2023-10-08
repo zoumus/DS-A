@@ -109,8 +109,8 @@
       //   result[levelNum].push(node.val);
       // }
       
-      if(node.left !== null)  queue.push({node: node.left, levelNum: levelNum + 1})
-      if(node.right !== null) queue.push({node: node.right, levelNum: levelNum + 1})
-    }
-    return result;
-};
+//       if(node.left !== null)  queue.push({node: node.left, levelNum: levelNum + 1})
+//       if(node.right !== null) queue.push({node: node.right, levelNum: levelNum + 1})
+//     }
+//     return result;
+// };
