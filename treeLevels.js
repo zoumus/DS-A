@@ -96,12 +96,12 @@
 // treeLevels(null); // -> []
 
 
-// const treeLevels = (root) => {
-//     if (root === null) return [];
-//     let result = [];
+const treeLevels = (root) => {
+    if (root === null) return [];
+    let result = [];
     
-//     let queue = [{node: root, levelNum: 0}];
-//     while(queue.length > 0) {
+    let queue = [{node: root, levelNum: 0}];
+    while(queue.length > 0) {
       const{node, levelNum} = queue.shift();
       if (result.length === levelNum) {
         result[levelNum] = [node.val];
